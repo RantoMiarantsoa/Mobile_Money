@@ -14,7 +14,7 @@
 - [ ] Lister les comptes clients
 - [ ] Afficher leur numéro
 - [ ] Afficher leur opérateur
-- [ ] Afficher leur solde ( dernier date)
+- [x] Afficher leur solde ( dernier date)
   
 
 ---
