@@ -24,4 +24,11 @@ class TypeOperationModel extends Model
     ];
 
     protected $skipValidation = false;
+
+        public function getNomById(int $id): ?int
+{
+    $type = $this->where('id', $id)->first();
+
+    return $type ? (string) $type['nom'] : null;
+}
 }

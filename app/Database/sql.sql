@@ -118,3 +118,38 @@ INSERT INTO bareme_frais(id_type_operation, montant_min, montant_max, frais) VAL
 (3, 250001, 500000, 1500),
 (3, 500001, 1000000, 2500),
 (3, 1000001, 2000000, 3000);
+
+
+-- Total des crédits reçus par client
+CREATE VIEW v_credit_client AS
+SELECT
+    o.client_destination AS id_client,
+    SUM(m.montant)        AS total_credit
+FROM mouvement m
+JOIN operation o       ON o.id = m.id_operation
+JOIN type_mouvement tm ON tm.id = m.id_type_mouvement
+WHERE tm.nom = 'Credit'
+GROUP BY o.client_destination;
+
+-- Total des débits effectués par client
+CREATE VIEW v_debit_client AS
+SELECT
+    o.client_source AS id_client,
+    SUM(m.montant)   AS total_debit
+FROM mouvement m
+JOIN operation o       ON o.id = m.id_operation
+JOIN type_mouvement tm ON tm.id = m.id_type_mouvement
+WHERE tm.nom = 'Debit'
+GROUP BY o.client_source;
+
+-- Solde de chaque client = crédits - débits
+CREATE VIEW v_solde_client AS
+SELECT
+    c.id                                          AS id_client,
+    c.nom,
+    c.telephone,
+    COALESCE(vc.total_credit, 0)
+        - COALESCE(vd.total_debit, 0)             AS solde
+FROM client c
+LEFT JOIN v_credit_client vc ON vc.id_client = c.id
+LEFT JOIN v_debit_client  vd ON vd.id_client = c.id;

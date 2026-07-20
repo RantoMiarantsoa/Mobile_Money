@@ -24,4 +24,11 @@ class TypeMouvementModel extends Model
     ];
 
     protected $skipValidation = false;
+
+      public function getIdByNom(string $nom): ?int
+{
+    $type = $this->where('nom', $nom)->first();
+
+    return $type ? (int) $type['id'] : null;
+}
 }
