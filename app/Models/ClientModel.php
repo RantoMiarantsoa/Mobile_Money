@@ -15,7 +15,7 @@ class ClientModel extends Model
     // Numéro malgache : 0 + préfixe (32,33,34,37,38) + 7 chiffres
     protected $validationRules = [
         'nom'       => 'required|min_length[2]|max_length[150]',
-        'telephone' => 'required|regex_match[/^0(32|33|34|37|38)[0-9]{7}$/]|is_unique[client.telephone,id,{id}]',
+       'telephone' => 'required|regex_match[/^(034|038)[0-9]{7}$/]'
     ];
 
     protected $validationMessages = [

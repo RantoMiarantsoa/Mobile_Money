@@ -9,7 +9,7 @@ use App\Models\TypeOperationModel;
 use App\Models\OperateurModel;
 use App\Models\BaremeFraisModel;
 use App\Models\PrefixeModel;
-use App\Models\CompteClientModel;
+use App\Models\SoldeModel;
 
 
 class OperateurController extends BaseController
@@ -66,6 +66,9 @@ class OperateurController extends BaseController
 
     }
 
+    public function gainAutreOperateur(){
+        
+    }
 
     public function clients()
     {
@@ -124,7 +127,7 @@ class OperateurController extends BaseController
   public function comptesClients()
 {
 
-    $compteClientModel = new CompteClientModel();
+    $compteClientModel = new SoldeModel();
 
 
     $data = [
