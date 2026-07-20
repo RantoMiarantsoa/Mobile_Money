@@ -39,16 +39,15 @@
 
 - [ ] Choisir le destinataire
 - [ ] Vérifier l'existence du numéro
-- [ ] Calculer automatiquement les frais
-- [ ] crediter le compte expéditeur
-- [ ] debiter le compte destinataire
-- [ ] Enregistrer l'opération
+- [x] Calculer automatiquement les frais
+- [x] debiter le compte destinataire
+- [x] Enregistrer l'opération
   
   ## Dépôt
 
-- [ ] Effectuer un dépôt
-- [ ] Créditer automatiquement le compte
-- [ ] Enregistrer l'opération
+- [x] Effectuer un dépôt
+- [x] Créditer automatiquement le compte
+- [x] Enregistrer l'opération
 
 
 ## Mouvement operation

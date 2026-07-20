@@ -19,14 +19,19 @@ class OperationModel extends Model
     protected $returnType    = 'array';
     protected $useTimestamps = false;
 
-    protected $validationRules = [
-        'id_type_operation'  => 'required|integer|is_not_unique[type_operation.id]|callback_coherenceClients',
-        'client_source'      => 'permit_empty|integer|is_not_unique[client.id]',
-        'client_destination' => 'permit_empty|integer|is_not_unique[client.id]',
-        'montant'            => 'required|integer|greater_than[0]',
-        'frais'              => 'permit_empty|integer|greater_than_equal_to[0]',
-    ];
+protected $validationRules = [
 
+    'id_type_operation' => 'required|integer',
+
+    'client_source' => 'permit_empty|integer',
+
+    'client_destination' => 'permit_empty|integer',
+
+    'montant' => 'required|integer',
+
+    'frais' => 'permit_empty|integer'
+
+];
     protected $validationMessages = [
         'id_type_operation' => [
             'required'      => "Le type d'opération est obligatoire.",
@@ -55,46 +60,70 @@ class OperationModel extends Model
      * - Retrait    : uniquement client_source
      * - Transfert  : les deux, et différents l'un de l'autre
      */
-    public function coherenceClients(string $idTypeOperation, string $fields, array $data, ?string &$error = null): bool
-    {
-        $type = new TypeOperationModel()->find((int) $idTypeOperation);
+  public function coherenceClients($value, string $fields, array $data)
+{
+    $typeOperationModel = new TypeOperationModel();
 
-        if (! $type) {
-            return true; // déjà couvert par is_not_unique
-        }
+    $type = $typeOperationModel->find(
+        (int)($data['id_type_operation'] ?? 0)
+    );
 
-        $source = $data['client_source'] ?? null;
-        $dest   = $data['client_destination'] ?? null;
 
-        switch ($type['nom']) {
-            case 'Depot':
-                if ($source || ! $dest) {
-                    $error = 'Un dépôt doit avoir uniquement un client destinataire.';
-                    return false;
-                }
-                break;
-
-            case 'Retrait':
-                if ($dest || ! $source) {
-                    $error = 'Un retrait doit avoir uniquement un client source.';
-                    return false;
-                }
-                break;
-
-            case 'Transfert':
-                if (! $source || ! $dest) {
-                    $error = 'Un transfert nécessite un client source et un client destinataire.';
-                    return false;
-                }
-                if ($source === $dest) {
-                    $error = 'Le client source et le client destinataire doivent être différents.';
-                    return false;
-                }
-                break;
-        }
-
+    if (!$type) {
         return true;
     }
+
+
+    $source = $data['client_source'] ?? null;
+    $dest   = $data['client_destination'] ?? null;
+
+
+
+    switch ($type['nom']) {
+
+
+        case 'Depot':
+
+            if ($source !== null || $dest === null) {
+
+                return false;
+            }
+
+            break;
+
+
+
+        case 'Retrait':
+
+            if ($dest !== null || $source === null) {
+
+                return false;
+            }
+
+            break;
+
+
+
+        case 'Transfert':
+
+            if ($source === null || $dest === null) {
+
+                return false;
+            }
+
+
+            if ($source == $dest) {
+
+                return false;
+            }
+
+            break;
+
+    }
+
+
+    return true;
+}
 
     /**
      * Calcule le frais applicable à partir du barème pour un type et un montant donnés.

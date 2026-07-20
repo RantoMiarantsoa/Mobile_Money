@@ -153,3 +153,7 @@ SELECT
 FROM client c
 LEFT JOIN v_credit_client vc ON vc.id_client = c.id
 LEFT JOIN v_debit_client  vd ON vd.id_client = c.id;
+
+
+ALTER TABLE mouvement
+ADD COLUMN id_client INTEGER REFERENCES client(id);
