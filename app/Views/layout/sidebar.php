@@ -72,7 +72,15 @@
 
         </li>
 
+ <li class="mb-2">
+            <a href="<?= base_url('operateur/gain_autre_operateur') ?>" 
+                class="nav-link text-white">
+                <i class="bi bi-wallet2"></i>
+                Gain Operateurs
 
+            </a>
+
+        </li>
 
     </ul>
 
