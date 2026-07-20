@@ -25,7 +25,7 @@ class TypeOperationModel extends Model
 
     protected $skipValidation = false;
 
-        public function getNomById(int $id): ?int
+public function getNomById(int $id): ?string
 {
     $type = $this->where('id', $id)->first();
 

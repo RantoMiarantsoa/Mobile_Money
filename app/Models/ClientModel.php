@@ -56,4 +56,18 @@ class ClientModel extends Model
 
         return $this->find($id);
     }
+
+    public function getIdByTelephone(string $telephone): ?int
+{
+    $client = $this->where('telephone', $telephone)->first();
+
+    return $client ? (int) $client['id'] : null;
+}
+
+public function findByTelephone(string $telephone)
+{
+    return $this
+        ->where('telephone', trim($telephone))
+        ->first();
+}
 }

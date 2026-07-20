@@ -155,6 +155,8 @@ LEFT JOIN v_credit_client vc ON vc.id_client = c.id
 LEFT JOIN v_debit_client  vd ON vd.id_client = c.id;
 
 
+ALTER TABLE mouvement
+ADD COLUMN id_client INTEGER REFERENCES client(id);
 INSERT INTO client (nom, telephone) VALUES
 ('Jean Rakoto', '0321234567'),
 ('Mamy Andria', '0349876543'),
