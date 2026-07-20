@@ -322,7 +322,7 @@ $soldeModel = new SoldeModel();
     }
 
 
- $bareme = $baremeModel->trouverBareme(2, $montant);
+ $bareme = $baremeModel->trouverBareme(3, $montant);
 
     $frais = $bareme ? (int)$bareme['frais'] : 0;
 
@@ -376,7 +376,7 @@ $solde = $soldeModel->calculerSolde($idClientSource);
 
             'montant'=>$montant,
 
-            'frais'=>0
+            'frais'=>$frais
 
         ], true);
 
