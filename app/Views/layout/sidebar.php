@@ -1,97 +1,108 @@
-<div class="d-flex flex-column p-3 bg-dark text-white"
-     style="width:260px; min-height:100vh;">
+<?php
+    // Détermine l'URI courante pour surligner le lien actif du menu
+    $currentUri = trim(parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH), '/');
+    $isActive = function (string $path) use ($currentUri): string {
+        return $currentUri === trim($path, '/') ? 'active' : '';
+    };
+?>
 
-    <h4 class="text-center mb-4">
-         Mobile Money
-    </h4>
+<div class="sidebar">
 
-    <hr>
+    <div class="sidebar-brand">
+        <div class="logo-badge">
+            <i class="bi bi-wallet2"></i>
+        </div>
+        <div class="brand-text">
+            <strong>Mobile Money</strong>
+            <span>Espace opérateur</span>
+        </div>
+    </div>
 
-    <ul class="nav nav-pills flex-column mb-auto">
+    <div class="sidebar-section-label">Général</div>
 
-        <li class="nav-item mb-2">
-            <a href="<?= base_url('operateur/dashboard') ?>" 
-               class="nav-link text-white">
+    <ul class="sidebar-nav">
+
+        <li>
+            <a href="<?= base_url('operateur/dashboard') ?>"
+               class="nav-link <?= $isActive('operateur/dashboard') ?>">
                 <i class="bi bi-speedometer2"></i>
                 Dashboard
             </a>
         </li>
 
-
-        <li class="mb-2">
-            <a href="<?= base_url('operateur/clients') ?>" 
-               class="nav-link text-white">
+        <li>
+            <a href="<?= base_url('operateur/clients') ?>"
+               class="nav-link <?= $isActive('operateur/clients') ?>">
                 <i class="bi bi-people"></i>
                 Clients
             </a>
         </li>
 
+        <li>
+            <a href="<?= base_url('operateur/comptes-clients') ?>"
+               class="nav-link <?= $isActive('operateur/comptes-clients') ?>">
+                <i class="bi bi-wallet2"></i>
+                Comptes clients
+            </a>
+        </li>
 
-        <li class="mb-2">
-            <a href="<?= base_url('operateur/gains') ?>" 
-               class="nav-link text-white">
-                <i class="bi bi-graph-up"></i>
+        <li>
+            <a href="<?= base_url('operateur/gains') ?>"
+               class="nav-link <?= $isActive('operateur/gains') ?>">
+                <i class="bi bi-graph-up-arrow"></i>
                 Gains
             </a>
         </li>
 
-        <li class="mb-2">
-            <a href="<?= base_url('operateur/operateurs') ?>" 
-                class="nav-link text-white">
-                <i class="bi bi-phone"></i>
-                 Opérateurs
-
+        <li>
+            <a href="<?= base_url('operateur/gain_autre_operateur') ?>"
+               class="nav-link <?= $isActive('operateur/gain_autre_operateur') ?>">
+                <i class="bi bi-currency-exchange"></i>
+                Gains opérateurs
             </a>
-        </li>
-
-        <li class="mb-2">
-            <a href="<?= base_url('operateur/baremes') ?>" 
-                class="nav-link text-white">
-                <i class="bi bi-phone"></i>
-                 Baremes
-
-            </a>
-        </li>
-
-        <li class="mb-2">
-            <a href="<?= base_url('operateur/prefixes') ?>" 
-                class="nav-link text-white">
-                <i class="bi bi-phone"></i>
-                 prefixes
-
-            </a>
-        </li>
-
-        <li class="mb-2">
-            <a href="<?= base_url('operateur/comptes-clients') ?>" 
-                class="nav-link text-white">
-                <i class="bi bi-wallet2"></i>
-                Comptes clients
-
-            </a>
-
-        </li>
-
- <li class="mb-2">
-            <a href="<?= base_url('operateur/gain_autre_operateur') ?>" 
-                class="nav-link text-white">
-                <i class="bi bi-wallet2"></i>
-                Gain Operateurs
-
-            </a>
-
         </li>
 
     </ul>
 
+    <div class="sidebar-section-label">Configuration</div>
 
-    <hr>
+    <ul class="sidebar-nav" style="flex:none;">
 
+        <li>
+            <a href="<?= base_url('operateur/operateurs') ?>"
+               class="nav-link <?= $isActive('operateur/operateurs') ?>">
+                <i class="bi bi-phone"></i>
+                Opérateurs
+            </a>
+        </li>
 
-    <a href="<?= base_url('/') ?>" class="btn btn-danger">
-        <i class="bi bi-box-arrow-right"></i>
-        Déconnexion
-    </a>
+        <li>
+            <a href="<?= base_url('operateur/baremes') ?>"
+               class="nav-link <?= $isActive('operateur/baremes') ?>">
+                <i class="bi bi-sliders"></i>
+                Barèmes
+            </a>
+        </li>
 
+        <li>
+            <a href="<?= base_url('operateur/prefixes') ?>"
+               class="nav-link <?= $isActive('operateur/prefixes') ?>">
+                <i class="bi bi-hash"></i>
+                Préfixes
+            </a>
+        </li>
+
+    </ul>
+
+    <div class="sidebar-footer">
+
+        <a href="<?= base_url('/') ?>" class="btn-logout">
+            <i class="bi bi-box-arrow-right"></i>
+            Déconnexion
+        </a>
+
+    </div>
 
 </div>
+
+<div class="sidebar-backdrop"></div>
