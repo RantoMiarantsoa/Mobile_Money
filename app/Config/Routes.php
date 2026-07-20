@@ -38,9 +38,7 @@ $routes->get(
 
 $routes->get('client/historique','ClientController::historique');
 // Affichage des formulaires
-$routes->get(
-    'client/depot',
-    'ClientController::depot'
+$routes->get('client/depot','ClientController::depot'
 );
 
 $routes->get(

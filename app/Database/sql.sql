@@ -119,7 +119,30 @@ INSERT INTO bareme_frais(id_type_operation, montant_min, montant_max, frais) VAL
 (3, 500001, 1000000, 2500),
 (3, 1000001, 2000000, 3000);
 
+DROP VIEW v_solde_client;
+DROP VIEW v_credit_client;
+DROP VIEW v_debit_client;
 
+
+CREATE TABLE client_new (
+    id INTEGER PRIMARY KEY,
+    nom TEXT NOT NULL,
+    telephone TEXT NOT NULL,
+    CHECK (
+        telephone LIKE '034%' 
+        OR telephone LIKE '038%'
+    )
+);
+
+DELETE FROM client
+WHERE telephone NOT LIKE '034%'
+AND telephone NOT LIKE '038%';
+
+INSERT INTO client_new
+SELECT * FROM client;
+
+DROP TABLE client;
+ALTER TABLE client_new RENAME TO client;
 -- Total des crédits reçus par client
 CREATE VIEW v_credit_client AS
 SELECT
@@ -166,3 +189,20 @@ INSERT INTO client (nom, telephone) VALUES
 
 ALTER TABLE operation 
 ADD telephone_destination VARCHAR(20);
+
+CREATE TABLE commission_autre_operateur (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+    id_operateur_destination INTEGER NOT NULL,
+
+    pourcentage REAL NOT NULL DEFAULT 0,
+
+    FOREIGN KEY(id_operateur_destination)
+    REFERENCES operateur(id)
+);
+
+INSERT INTO commission_autre_operateur
+(id_operateur_destination, pourcentage)
+VALUES
+(1,5),
+(3,3);
