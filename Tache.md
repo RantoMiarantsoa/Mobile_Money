@@ -5,15 +5,15 @@
 
 ### Situation des gains
 
-- [ ] Afficher les gains provenant des retraits
-- [ ] Afficher les gains provenant des transferts
-- [] Creation de la fonction calcul gain total
+- [x] Afficher les gains provenant des retraits 
+- [x] Afficher les gains provenant des transferts
+- [x] Creation de la fonction calcul gain total
 
 ### Situation des comptes clients
 
-- [ ] Lister les comptes clients
-- [ ] Afficher leur numéro
-- [ ] Afficher leur opérateur
+- [x] Lister les comptes clients
+- [x] Afficher leur numéro
+- [x] Afficher leur opérateur
 - [x] Afficher leur solde ( dernier date)
   
 
@@ -27,8 +27,8 @@
 
 ## transfert
 
-- [ ] Choisir le destinataire
-- [ ] Vérifier l'existence du numéro
+- [x] Choisir le destinataire
+- [x] Vérifier l'existence du numéro
 - [x] Calculer automatiquement les frais
 - [x] Débiter le compte expéditeur
 - [x] Créditer le compte destinataire
@@ -37,8 +37,8 @@
 
   ## retrait
 
-- [ ] Choisir le destinataire
-- [ ] Vérifier l'existence du numéro
+- [x] Choisir le destinataire
+- [x] Vérifier l'existence du numéro
 - [x] Calculer automatiquement les frais
 - [x] debiter le compte destinataire
 - [x] Enregistrer l'opération
