@@ -17,13 +17,6 @@
 - [ ] Afficher leur solde ( dernier date)
   
 
-## Retrait
-
-- [ ] Vérifier le solde disponible
-- [ ] Calculer automatiquement les frais
-- [ ] Débiter le compte
-- [ ] Enregistrer l'opération
-
 ---
 
 
@@ -46,3 +39,6 @@
 - [ ] Effectuer un dépôt
 - [ ] Créditer automatiquement le compte
 - [ ] Enregistrer l'opération
+
+
+## Mouvement operation
