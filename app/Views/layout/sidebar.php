@@ -62,6 +62,16 @@
             </a>
         </li>
 
+        <li class="mb-2">
+            <a href="<?= base_url('operateur/comptes-clients') ?>" 
+                class="nav-link text-white">
+                <i class="bi bi-wallet2"></i>
+                Comptes clients
+
+            </a>
+
+        </li>
+
 
 
     </ul>

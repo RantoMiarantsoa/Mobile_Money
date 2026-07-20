@@ -9,6 +9,7 @@ use App\Models\TypeOperationModel;
 use App\Models\OperateurModel;
 use App\Models\BaremeFraisModel;
 use App\Models\PrefixeModel;
+use App\Models\CompteClientModel;
 
 
 class OperateurController extends BaseController
@@ -120,5 +121,23 @@ class OperateurController extends BaseController
     return view('operateur/prefixes',$data);
 
 }
+  public function comptesClients()
+{
 
+    $compteClientModel = new CompteClientModel();
+
+
+    $data = [
+
+        'comptes' => $compteClientModel->listeComptesClients()
+
+    ];
+
+
+    return view(
+        'operateur/comptes_clients',
+        $data
+    );
+
+}
 }

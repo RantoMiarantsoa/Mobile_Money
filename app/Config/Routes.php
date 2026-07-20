@@ -17,6 +17,7 @@ $routes->group('operateur', function($routes) {
     $routes->get('operateurs','OperateurController::operateurs');
     $routes->get('baremes','OperateurController::baremes');
     $routes->get('prefixes','OperateurController::prefixes');
+    $routes->get('comptes-clients','OperateurController::comptesClients');
 });
 
 
