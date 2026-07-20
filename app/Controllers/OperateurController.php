@@ -10,6 +10,8 @@ use App\Models\OperateurModel;
 use App\Models\BaremeFraisModel;
 use App\Models\PrefixeModel;
 use App\Models\SoldeModel;
+use App\Models\CommissionOperateurModel;
+
 
 
 class OperateurController extends BaseController
@@ -66,9 +68,25 @@ class OperateurController extends BaseController
 
     }
 
-    public function gainAutreOperateur(){
-        
-    }
+    
+
+  public function gainAutreOperateur()
+{
+    $commissionModel = new CommissionOperateurModel();
+
+
+    $data = [
+
+        'gains' => $commissionModel->getGainParOperateur()
+
+    ];
+
+
+    return view(
+        'operateur/gain_autre_operateur',
+        $data
+    );
+}
 
     public function clients()
     {

@@ -18,6 +18,8 @@ $routes->group('operateur', function($routes) {
     $routes->get('baremes','OperateurController::baremes');
     $routes->get('prefixes','OperateurController::prefixes');
     $routes->get('comptes-clients','OperateurController::comptesClients');
+    $routes->get('gain_autre_operateur','OperateurController::gainAutreOperateur'
+);
 });
 
 

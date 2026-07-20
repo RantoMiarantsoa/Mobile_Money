@@ -25,4 +25,29 @@ class CommissionOperateurModel extends Model
                     ->where('operateur_destination', $destination)
                     ->first();
     }
+
+    public function trouverCommission($idOperateurDestination)
+    {
+        return $this
+            ->where(
+                'operateur_destination',
+                $idOperateurDestination
+            )
+            ->first();
+    }
+
+    public function getGainParOperateur()
+{
+    return $this
+        ->select('
+            o.nom AS operateur,
+            SUM(commission_operateur.commission) AS gain
+        ')
+        ->join(
+            'operateur o',
+            'o.id = commission_operateur.operateur_destination'
+        )
+        ->groupBy('o.id')
+        ->findAll();
+}
 }
