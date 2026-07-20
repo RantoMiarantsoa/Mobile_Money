@@ -8,17 +8,15 @@ use App\Models\ClientModel;
 class AuthController extends BaseController
 {
 
-    public function login()
-    {
-        // Si déjà connecté, aller directement à l'accueil
-        if(session()->get('connecte')){
-            return redirect()->to('/client/accueil');
-        }
-
-        return view('auth/login');
+public function login()
+{
+    // Si déjà connecté, aller directement à l'accueil
+    if(session()->get('connecte')){
+        return redirect()->to('/client');
     }
 
-
+    return view('auth/login');
+}
 
     public function authentifier()
     {
