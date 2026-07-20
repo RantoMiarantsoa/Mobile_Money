@@ -153,3 +153,11 @@ SELECT
 FROM client c
 LEFT JOIN v_credit_client vc ON vc.id_client = c.id
 LEFT JOIN v_debit_client  vd ON vd.id_client = c.id;
+
+
+INSERT INTO client (nom, telephone) VALUES
+('Jean Rakoto', '0321234567'),
+('Mamy Andria', '0349876543'),
+('Fara Randria', '0331122334'),
+('Tiana Rabe', '0375566778'),
+('Hery Solo', '0389988776');
