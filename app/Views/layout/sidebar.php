@@ -2,7 +2,7 @@
      style="width:260px; min-height:100vh;">
 
     <h4 class="text-center mb-4">
-        📱 Mobile Money
+         Mobile Money
     </h4>
 
     <hr>

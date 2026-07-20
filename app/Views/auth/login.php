@@ -40,7 +40,7 @@ rel="stylesheet"
 
                     <h2 class="text-center mb-4">
 
-                        📱 Connexion Mobile Money
+                        Connexion Mobile Money
 
                     </h2>
 
@@ -103,7 +103,7 @@ rel="stylesheet"
                                 class="btn btn-primary btn-lg rounded-3"
                             >
 
-                                🔐 Se connecter
+                                 Se connecter
 
                             </button>
 

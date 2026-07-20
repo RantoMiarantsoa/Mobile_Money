@@ -25,14 +25,14 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 
 <main class="container-fluid p-4">
 
-<h2 class="mb-4">📈 Situation des gains</h2>
+<h2 class="mb-4"> Situation des gains</h2>
 
 <div class="row g-4">
 
 <div class="col-md-4">
 <div class="card shadow border-0">
 <div class="card-body">
-<h5>💰 Gains retrait</h5>
+<h5>Gains retrait</h5>
 <h2 class="text-warning">
 <?= number_format($gainRetrait, 0, ',', ' ') ?> Ar
 </h2>
@@ -44,7 +44,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 <div class="col-md-4">
 <div class="card shadow border-0">
 <div class="card-body">
-<h5>💸 Gains transfert</h5>
+<h5>Gains transfert</h5>
 <h2 class="text-primary">
 <?= number_format($gainTransfert, 0, ',', ' ') ?> Ar
 </h2>
@@ -56,7 +56,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 <div class="col-md-4">
 <div class="card shadow bg-success text-white">
 <div class="card-body">
-<h5>📊 Gains total</h5>
+<h5>Gains total</h5>
 <h2>
 <?= number_format($gainTotal, 0, ',', ' ') ?> Ar
 </h2>

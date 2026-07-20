@@ -24,7 +24,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 
 <main class="container-fluid p-4">
 
-<h2 class="mb-4">👥 Situation des comptes clients</h2>
+<h2 class="mb-4">Situation des comptes clients</h2>
 
 <div class="card shadow mt-4 border-0">
 <div class="card-header bg-dark text-white">

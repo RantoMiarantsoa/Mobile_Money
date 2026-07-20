@@ -31,7 +31,7 @@
                 <div class="card-header bg-success text-white text-center">
 
                     <h3>
-                        💰 Faire un dépôt
+                         Faire un dépôt
                     </h3>
 
                 </div>
@@ -116,7 +116,7 @@
                             class="btn btn-success w-100"
                         >
 
-                            💰 Déposer
+                            Déposer
 
                         </button>
 

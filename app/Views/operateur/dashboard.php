@@ -26,7 +26,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
     <!-- CONTENU -->
     <main class="container-fluid p-4">
 
-        <h2 class="mb-4">📊 Dashboard Opérateur</h2>
+        <h2 class="mb-4"> Dashboard Opérateur</h2>
 
         <div class="row g-4">
 
@@ -34,7 +34,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
             <div class="col-md-4">
                 <div class="card shadow border-0">
                     <div class="card-body">
-                        <h6 class="text-muted">👥 Clients</h6>
+                        <h6 class="text-muted">Clients</h6>
                         <h2><?= esc($nombreClients) ?></h2>
                         <p>Clients enregistrés</p>
                     </div>
@@ -45,7 +45,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
             <div class="col-md-4">
                 <div class="card shadow border-0">
                     <div class="card-body">
-                        <h6 class="text-muted">🔄 Opérations</h6>
+                        <h6 class="text-muted"></h6> Opérations</h6>
                         <h2><?= esc($nombreOperations) ?></h2>
                         <p>Toutes les opérations</p>
                     </div>
@@ -55,7 +55,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
             <div class="col-md-4">
                 <div class="card shadow border-0">
                     <div class="card-body">
-                        <h6>💰 Gains retrait</h6>
+                        <h6>Gains retrait</h6>
                         <h2 class="text-warning">
                             <?= number_format($gainRetrait, 0, ',', ' ') ?> Ar
                         </h2>
@@ -66,7 +66,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
             <div class="col-md-4">
                 <div class="card shadow border-0">
                     <div class="card-body">
-                        <h6>💸 Gains transfert</h6>
+                        <h6> Gains transfert</h6>
                         <h2 class="text-primary">
                             <?= number_format($gainTransfert, 0, ',', ' ') ?> Ar
                         </h2>
@@ -77,7 +77,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
             <div class="col-md-4">
                 <div class="card shadow bg-success text-white">
                     <div class="card-body">
-                        <h6>📈 Gains total</h6>
+                        <h6>Gains total</h6>
                         <h2>
                             <?= number_format($gainTotal, 0, ',', ' ') ?> Ar
                         </h2>

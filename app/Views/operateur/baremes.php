@@ -51,7 +51,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 
 
             <h2>
-                💰 Gestion des barèmes de frais
+                 Gestion des barèmes de frais
             </h2>
 
 

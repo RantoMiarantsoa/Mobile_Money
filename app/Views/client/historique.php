@@ -32,7 +32,7 @@ rel="stylesheet"
 
 
             <h2 class="text-center mb-4">
-                📜 Historique de mes opérations
+                 Historique de mes opérations
             </h2>
 
 
@@ -108,7 +108,7 @@ rel="stylesheet"
 
 
                                 <span class="badge bg-success">
-                                    💰 Dépôt
+                                    Dépôt
                                 </span>
 
 
@@ -116,7 +116,7 @@ rel="stylesheet"
 
 
                                 <span class="badge bg-danger">
-                                    💸 Retrait
+                                 Retrait
                                 </span>
 
 
@@ -124,7 +124,7 @@ rel="stylesheet"
 
 
                                 <span class="badge bg-primary">
-                                    🔄 Transfert
+                                     Transfert
                                 </span>
 
 

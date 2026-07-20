@@ -34,7 +34,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 
 <h2 class="mb-4">
 
-💳 Situation des comptes clients
+Situation des comptes clients
 
 </h2>
 

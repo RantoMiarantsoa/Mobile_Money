@@ -96,13 +96,13 @@ Téléphone : <?= esc($telephone) ?>
 
 <a href="<?= base_url('client/depot') ?>">
     <button class="depot">
-        💰 Dépôt
+         Dépôt
     </button>
 </a>
 
 <a href="<?= base_url('client/retrait') ?>">
     <button class="retrait">
-        💸 Retrait
+         Retrait
     </button>
 </a>
 
@@ -112,19 +112,19 @@ Téléphone : <?= esc($telephone) ?>
 
 <a href="<?= base_url('client/transfert?operateur=MVOLA') ?>">
     <button class="transfert">
-        🔵 Transfert vers MVola
+         Transfert vers MVola
     </button>
 </a>
 
 <a href="<?= base_url('client/transfert?operateur=ORANGE') ?>">
     <button class="transfert">
-        🟠 Transfert vers Orange Money
+        Transfert vers Orange Money
     </button>
 </a>
 
 <a href="<?= base_url('client/transfert?operateur=AIRTEL') ?>">
     <button class="transfert">
-        🔴 Transfert vers Airtel Money
+         Transfert vers Airtel Money
     </button>
 </a>
 
@@ -132,13 +132,13 @@ Téléphone : <?= esc($telephone) ?>
 
 <a href="<?= base_url('client/historique') ?>">
     <button class="historique">
-        📜 Historique des opérations
+         Historique des opérations
     </button>
 </a>
 
 <a href="<?= base_url('logout') ?>">
     <button class="logout">
-        🚪 Déconnexion
+         Déconnexion
     </button>
 </a>
 

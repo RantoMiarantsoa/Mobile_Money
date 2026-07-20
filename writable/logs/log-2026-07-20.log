@@ -1625,3 +1625,5 @@ in APPPATH/Views/operateur/gain_autre_operateur.php on line 73.
 10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
 12 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+DEBUG - 2026-07-20 14:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 14:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
