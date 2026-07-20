@@ -5,15 +5,15 @@
 
 ### Situation des gains
 
-- [ ] Afficher les gains provenant des retraits
-- [ ] Afficher les gains provenant des transferts
-- [] Creation de la fonction calcul gain total
+- [x] Afficher les gains provenant des retraits 
+- [x] Afficher les gains provenant des transferts
+- [x] Creation de la fonction calcul gain total
 
 ### Situation des comptes clients
 
-- [ ] Lister les comptes clients
-- [ ] Afficher leur numéro
-- [ ] Afficher leur opérateur
+- [x] Lister les comptes clients
+- [x] Afficher leur numéro
+- [x] Afficher leur opérateur
 - [x] Afficher leur solde ( dernier date)
   
 

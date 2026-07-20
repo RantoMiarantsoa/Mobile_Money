@@ -247,6 +247,28 @@ public function transfert()
 
     // Calcul frais transfert
     $bareme = $baremeModel->trouverBareme(3, $montant);
+    if (!$idClientDestinataire) {
+
+        return $this->response->setJSON([
+            'success'=>false,
+            'error'=>"Destinataire introuvable"
+        ]);
+    }
+
+
+
+    // Empêcher transfert vers soi-même
+
+    if ($idClientSource == $idClientDestinataire) {
+
+        return $this->response->setJSON([
+            'success'=>false,
+            'error'=>"Impossible de transférer vers votre propre numéro"
+        ]);
+    }
+
+
+ $bareme = $baremeModel->trouverBareme(3, $montant);
 
     $frais = $bareme ? (int)$bareme['frais'] : 0;
 
