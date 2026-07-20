@@ -1,21 +1,18 @@
+
 <?php
 
 use CodeIgniter\Router\RouteCollection;
 
-/** @var RouteCollection $routes */
-$routes->get('/', 'UserController::login');
-$routes->get('logout', 'UserController::logout');
+/**
+ * @var RouteCollection $routes
+ */
 
-$routes->get('/users/create', 'UserController::create');
-$routes->post('/users/store', 'UserController::store');
+$routes->get('/', 'Home::index');
 
-$routes->get('/login', 'UserController::login');
-$routes->post('/login', 'UserController::authenticate'); // pour le POST du formulaire
+$routes->group('operateur', function($routes) {
 
-$routes->get('/achat', 'AchatController::index');
-$routes->post('/achat/create', 'AchatController::create');
-$routes->post('/achat/cloturer', 'AchatController::cloturer');
-$routes->get('/achat/caisse/(:num)', 'AchatController::getAllAchatByCaisse/$1');
+    $routes->get('dashboard','OperateurController::dashboard');
+    $routes->get('gains','OperateurController::gains');
+    $routes->get('clients','OperateurController::clients');
 
-$routes->get('/caisse','CaisseController::index');
-
+});
