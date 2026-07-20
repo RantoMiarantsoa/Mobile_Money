@@ -73,7 +73,6 @@ class BaremeFraisModel extends Model
         ->join(
             'type_operation',
             'type_operation.id = bareme_frais.id_type_operation'
-        )
-        ->findAll();
+        );
     }
 }

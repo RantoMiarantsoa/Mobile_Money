@@ -116,19 +116,19 @@ class OperateurController extends BaseController
     return view('operateur/operateurs', $data);
     }
 
-    public function baremes()
+   public function baremes()
     {
-    $baremeModel = new BaremeFraisModel();
+        $baremeModel = new BaremeFraisModel();
 
+        $data = [
+            'baremes' => $baremeModel
+                            ->listeBaremes()
+                            ->paginate(10),
 
-    $data = [
-        'baremes' => $baremeModel->listeBaremes()
-    ];
+            'pager' => $baremeModel->pager
+        ];
 
-    return view(
-        'operateur/baremes',
-        $data
-    );
+    return view('operateur/baremes', $data);
     }
 
     public function prefixes()
