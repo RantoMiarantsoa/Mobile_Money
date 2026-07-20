@@ -25,13 +25,23 @@
 ## Miarantsoa
 
 
-## Transfert
+## transfert
+
+- [ ] Choisir le destinataire
+- [ ] Vérifier l'existence du numéro
+- [x] Calculer automatiquement les frais
+- [x] Débiter le compte expéditeur
+- [x] Créditer le compte destinataire
+- [x] Enregistrer l'opération
+  
+
+  ## retrait
 
 - [ ] Choisir le destinataire
 - [ ] Vérifier l'existence du numéro
 - [ ] Calculer automatiquement les frais
-- [ ] Débiter le compte expéditeur
-- [ ] Créditer le compte destinataire
+- [ ] crediter le compte expéditeur
+- [ ] debiter le compte destinataire
 - [ ] Enregistrer l'opération
   
   ## Dépôt

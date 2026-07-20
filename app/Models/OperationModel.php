@@ -57,7 +57,7 @@ class OperationModel extends Model
      */
     public function coherenceClients(string $idTypeOperation, string $fields, array $data, ?string &$error = null): bool
     {
-        $type = model(TypeOperationModel::class)->find((int) $idTypeOperation);
+        $type = new TypeOperationModel()->find((int) $idTypeOperation);
 
         if (! $type) {
             return true; // déjà couvert par is_not_unique
@@ -101,7 +101,7 @@ class OperationModel extends Model
      */
     public function calculerFrais(int $idTypeOperation, int $montant): int
     {
-        $bareme = model(BaremeFraisModel::class)->trouverBareme($idTypeOperation, $montant);
+        $bareme = new BaremeFraisModel()->trouverBareme($idTypeOperation, $montant);
 
         return $bareme ? (int) $bareme['frais'] : 0;
     }

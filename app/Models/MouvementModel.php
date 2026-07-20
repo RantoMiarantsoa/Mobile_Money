@@ -36,33 +36,26 @@ class MouvementModel extends Model
 
     protected $skipValidation = false;
 
-    /**
-     * Calcule le solde d'un client = somme des crédits reçus - somme des débits effectués,
-     * en s'appuyant sur les opérations où il est source ou destinataire.
-     * Comme il n'y a pas de table "compte", le solde est toujours recalculé à la volée.
-     */
-    public function calculerSolde(int $idClient): int
-    {
-        $db = Database::connect();
+    
+public function calculerSolde($idClient): int
+{
+    $row = $this->where('id_client', $idClient)
+                ->first();
 
-        $credit = $db->table('mouvement m')
-            ->selectSum('m.montant')
-            ->join('operation o', 'o.id = m.id_operation')
-            ->join('type_mouvement tm', 'tm.id = m.id_type_mouvement')
-            ->where('o.client_destination', $idClient)
-            ->where('tm.nom', 'Credit')
-            ->get()
-            ->getRow('montant');
+    return (int) ($row['solde'] ?? 0);
+}
 
-        $debit = $db->table('mouvement m')
-            ->selectSum('m.montant')
-            ->join('operation o', 'o.id = m.id_operation')
-            ->join('type_mouvement tm', 'tm.id = m.id_type_mouvement')
-            ->where('o.client_source', $idClient)
-            ->where('tm.nom', 'Debit')
-            ->get()
-            ->getRow('montant');
+public function getAllCredit($idClient){
+    $row = $this->where('id_client',$idClient)
+        ->where('id_type_mouvement',1)
+        ->findAll();
+    return $row;
+    }
 
-        return (int) ($credit ?? 0) - (int) ($debit ?? 0);
+    function getAllDebit($idClient){
+    $row = $this->where('id_client',$idClient)
+        ->where('id_type_mouvement',2)
+        ->findAll();
+    return $row;
     }
 }
