@@ -6,6 +6,10 @@ use App\Controllers\BaseController;
 use App\Models\OperationModel;
 use App\Models\ClientModel;
 use App\Models\TypeOperationModel;
+use App\Models\OperateurModel;
+use App\Models\BaremeFraisModel;
+use App\Models\PrefixeModel;
+use App\Models\CompteClientModel;
 
 
 class OperateurController extends BaseController
@@ -80,5 +84,60 @@ class OperateurController extends BaseController
 
     }
 
+    public function operateurs()
+    {
+    $operateurModel = new OperateurModel();
 
+    $data = [
+        'operateurs' => $operateurModel->findAll()
+    ];
+
+    return view('operateur/operateurs', $data);
+    }
+
+    public function baremes()
+    {
+    $baremeModel = new BaremeFraisModel();
+
+
+    $data = [
+        'baremes' => $baremeModel->listeBaremes()
+    ];
+
+    return view(
+        'operateur/baremes',
+        $data
+    );
+    }
+
+    public function prefixes()
+{
+    $prefixeModel = new PrefixeModel();
+
+    $data = [
+        'prefixes' => $prefixeModel->listePrefixes()
+    ];
+
+    return view('operateur/prefixes',$data);
+
+}
+  public function comptesClients()
+{
+
+    $compteClientModel = new CompteClientModel();
+
+
+    $data = [
+
+        'comptes' => $compteClientModel->listeComptesClients()
+
+    ];
+
+
+    return view(
+        'operateur/comptes_clients',
+        $data
+    );
+
+}
 }

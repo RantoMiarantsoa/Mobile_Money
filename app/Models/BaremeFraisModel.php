@@ -63,4 +63,17 @@ class BaremeFraisModel extends Model
             ->where('montant_max >=', $montant)
             ->first();
     }
+
+    public function listeBaremes()
+    {
+    return $this->select('
+            bareme_frais.*,
+            type_operation.nom AS type_operation
+        ')
+        ->join(
+            'type_operation',
+            'type_operation.id = bareme_frais.id_type_operation'
+        )
+        ->findAll();
+    }
 }
