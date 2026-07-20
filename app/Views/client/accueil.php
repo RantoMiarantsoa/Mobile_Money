@@ -89,7 +89,9 @@ color:white;
 
 <body>
 
-
+<pre>
+<?php var_dump($solde); ?>
+</pre>
 <div class="container">
 
 
@@ -97,7 +99,13 @@ color:white;
 Bonjour <?= esc($nom) ?>
 </h2>
 
+<h3>
+    Voici votre solde : <?= esc($solde) ?> Ar
+</h3>
 
+
+
+</h3>
 <p>
 Téléphone :
 <?= esc($telephone) ?>
@@ -144,7 +152,15 @@ Téléphone :
 
 </a>
 
+<a href="<?= base_url('client/historique') ?>">
 
+<button class="historique">
+
+🔍 Historique opérations
+
+</button>
+
+</a>
 
 
 <a href="<?= base_url('logout') ?>">

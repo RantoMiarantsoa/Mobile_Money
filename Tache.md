@@ -27,8 +27,8 @@
 
 ## transfert
 
-- [ ] Choisir le destinataire
-- [ ] Vérifier l'existence du numéro
+- [x] Choisir le destinataire
+- [x] Vérifier l'existence du numéro
 - [x] Calculer automatiquement les frais
 - [x] Débiter le compte expéditeur
 - [x] Créditer le compte destinataire
@@ -37,8 +37,8 @@
 
   ## retrait
 
-- [ ] Choisir le destinataire
-- [ ] Vérifier l'existence du numéro
+- [x] Choisir le destinataire
+- [x] Vérifier l'existence du numéro
 - [x] Calculer automatiquement les frais
 - [x] debiter le compte destinataire
 - [x] Enregistrer l'opération
@@ -51,3 +51,8 @@
 
 
 ## Mouvement operation
+
+
+## Historique de transaction
+[x]FOnction getHistorique
+[x]Table pour afficher

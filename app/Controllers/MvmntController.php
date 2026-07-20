@@ -10,237 +10,210 @@ use App\Models\TypeOperationModel;
 use App\Models\BaremeFraisModel;
 use App\Models\ClientModel;
 use App\Models\SoldeModel;
+
 class MvmntController extends BaseController
 {
     protected $db;
+
 
     public function __construct()
     {
         $this->db = \Config\Database::connect();
     }
 
-  public function depot()
-{
-    $idClient = session()->get('id_client');
-    $montant = (int)$this->request->getPost('montant');
 
-    if (!$idClient) {
-        return $this->response->setJSON([
-            'success'=>false,
-            'error'=>"Utilisateur non connecté"
-        ]);
-    }
-
-    if ($montant <= 0) {
-        return $this->response->setJSON([
-            'success'=>false,
-            'error'=>"Montant invalide"
-        ]);
-    }
-
-    $operationModel = new OperationModel();
-    $mvmntModel = new MouvementModel();
-    $typeMouvementModel = new TypeMouvementModel();
+    public function depot()
+    {
+        $idClient = session()->get('id_client');
+        $montant = (int)$this->request->getPost('montant');
 
 
-    $idCredit = $typeMouvementModel->getIdByNom('Credit');
+        if (!$idClient) {
+            return $this->response->setJSON([
+                'success'=>false,
+                'error'=>"Utilisateur non connecté"
+            ]);
+        }
 
 
-    $this->db->transBegin();
-
-    try {
-
-        // Depot = type_operation 1
-        $idOperation = $operationModel->insert([
-            'id_type_operation'=>1,
-            'client_source'=>null,
-            'client_destination'=>$idClient,
-            'montant'=>$montant,
-            'frais'=>0
-        ],true);
+        if ($montant <= 0) {
+            return $this->response->setJSON([
+                'success'=>false,
+                'error'=>"Montant invalide"
+            ]);
+        }
 
 
-        $mvmntModel->insert([
-            'id_operation'=>$idOperation,
-            'id_client'=>$idClient,
-            'id_type_mouvement'=>$idCredit,
-            'montant'=>$montant
-        ]);
+        $operationModel = new OperationModel();
+        $mvmntModel = new MouvementModel();
+        $typeMouvementModel = new TypeMouvementModel();
 
 
-        $this->db->transCommit();
+        $idCredit = $typeMouvementModel->getIdByNom('Credit');
 
 
-        return $this->response->setJSON([
-            'success'=>true,
-            'id_operation'=>$idOperation
-        ]);
+        $this->db->transBegin();
 
 
-    }catch(\Exception $e){
+        try {
 
-        $this->db->transRollback();
+            $idOperation = $operationModel->insert([
 
-        return $this->response->setJSON([
-            'success'=>false,
-            'error'=>$e->getMessage()
-        ]);
-    }
-}
+                'id_type_operation'=>1,
+                'client_source'=>null,
+                'client_destination'=>$idClient,
+                'montant'=>$montant,
+                'frais'=>0
+
+            ], true);
 
 
 
-public function retrait()
-{
-    $idClient = session()->get('id_client');
-    $montant = (int)$this->request->getPost('montant');
+            $mvmntModel->insert([
+
+                'id_operation'=>$idOperation,
+                'id_client'=>$idClient,
+                'id_type_mouvement'=>$idCredit,
+                'montant'=>$montant
+
+            ]);
 
 
-    if (!$idClient) {
-        return $this->response->setJSON([
-            'success'=>false,
-            'error'=>"Utilisateur non connecté"
-        ]);
-    }
+            $this->db->transCommit();
 
 
-    if ($montant <= 0) {
-        return $this->response->setJSON([
-            'success'=>false,
-            'error'=>"Montant invalide"
-        ]);
-    }
+            return $this->response->setJSON([
+
+                'success'=>true,
+                'id_operation'=>$idOperation
+
+            ]);
 
 
-    $mvmntModel = new MouvementModel();
-    $operationModel = new OperationModel();
-    $typeMouvementModel = new TypeMouvementModel();
-    $baremeModel = new BaremeFraisModel();
+        } catch(\Exception $e){
 
-$soldeModel = new SoldeModel();
+            $this->db->transRollback();
 
-$solde = $soldeModel->calculerSolde($idClient);
+            return $this->response->setJSON([
 
-    // Récupération frais retrait
-    $bareme = $baremeModel->trouverBareme(2, $montant);
+                'success'=>false,
+                'error'=>$e->getMessage()
 
-    $frais = $bareme ? (int)$bareme['frais'] : 0;
-
-
-    $montantTotal = $montant + $frais;
-
-
-
-    if ($solde < $montantTotal) {
-
-        return $this->response->setJSON([
-            'success'=>false,
-            'error'=>"Solde insuffisant",
-            'solde'=>$solde,
-            'demande'=>$montantTotal
-        ]);
+            ]);
+        }
     }
 
 
 
-    $idDebit = $typeMouvementModel->getIdByNom('Debit');
+
+    public function retrait()
+    {
+        $idClient = session()->get('id_client');
+        $montant = (int)$this->request->getPost('montant');
 
 
-    if (!$idDebit) {
-        return $this->response->setJSON([
-            'success'=>false,
-            'error'=>"Type Debit introuvable"
-        ]);
-    }
+        if (!$idClient) {
+            return $this->response->setJSON([
+                'success'=>false,
+                'error'=>"Utilisateur non connecté"
+            ]);
+        }
 
 
-
-    $this->db->transBegin();
-
-
-    try {
-
-
-        // Création opération
-        $idOperation = $operationModel->insert([
-
-            'id_type_operation'=>2,
-            'client_source'=>$idClient,
-            'client_destination'=>null,
-            'montant'=>$montant,
-            'frais'=>$frais
-
-        ], true);
+        $operationModel = new OperationModel();
+        $mvmntModel = new MouvementModel();
+        $typeMouvementModel = new TypeMouvementModel();
+        $baremeModel = new BaremeFraisModel();
+        $soldeModel = new SoldeModel();
 
 
 
-        if (!$idOperation) {
+        $solde = $soldeModel->calculerSolde($idClient);
 
-            throw new \Exception(
-                implode(
-                    ",",
-                    $operationModel->errors()
-                )
-            );
 
+
+        $bareme = $baremeModel->trouverBareme(2,$montant);
+
+        $frais = $bareme ? (int)$bareme['frais'] : 0;
+
+
+        $montantTotal = $montant + $frais;
+
+
+
+        if($solde < $montantTotal){
+
+            return $this->response->setJSON([
+
+                'success'=>false,
+                'error'=>"Solde insuffisant"
+
+            ]);
         }
 
 
 
-        // Mouvement débit
-        $ok = $mvmntModel->insert([
-
-            'id_operation'=>$idOperation,
-            'id_client'=>$idClient,
-            'id_type_mouvement'=>$idDebit,
-            'montant'=>$montantTotal
-
-        ]);
+        $idDebit = $typeMouvementModel->getIdByNom('Debit');
 
 
 
-        if (!$ok) {
+        $this->db->transBegin();
 
-            throw new \Exception(
-                implode(
-                    ",",
-                    $mvmntModel->errors()
-                )
-            );
+
+        try{
+
+
+            $idOperation = $operationModel->insert([
+
+                'id_type_operation'=>2,
+                'client_source'=>$idClient,
+                'client_destination'=>null,
+                'montant'=>$montant,
+                'frais'=>$frais
+
+            ],true);
+
+
+
+            $mvmntModel->insert([
+
+                'id_operation'=>$idOperation,
+                'id_client'=>$idClient,
+                'id_type_mouvement'=>$idDebit,
+                'montant'=>$montantTotal
+
+            ]);
+
+
+
+            $this->db->transCommit();
+
+
+            return $this->response->setJSON([
+
+                'success'=>true,
+                'frais'=>$frais
+
+            ]);
+
+
+
+        }catch(\Exception $e){
+
+
+            $this->db->transRollback();
+
+
+            return $this->response->setJSON([
+
+                'success'=>false,
+                'error'=>$e->getMessage()
+
+            ]);
 
         }
-
-
-
-        $this->db->transCommit();
-
-
-        return $this->response->setJSON([
-
-            'success'=>true,
-            'id_operation'=>$idOperation,
-            'frais'=>$frais,
-            'solde_avant'=>$solde,
-            'solde_apres'=>$solde-$montantTotal
-
-        ]);
-
-
-
-    } catch(\Exception $e) {
-
-
-        $this->db->transRollback();
-
-
-        return $this->response->setJSON([
-
-            'success'=>false,
-            'error'=>$e->getMessage()
-
-        ]);
     }
-}
+
 
 
 
@@ -252,133 +225,90 @@ public function transfert()
         $this->request->getPost('telephoneDestinataire')
     );
 
-    $montant = (int) $this->request->getPost('montant');
-
-
-    if (!$idClientSource) {
-
-        return $this->response->setJSON([
-            'success'=>false,
-            'error'=>"Utilisateur non connecté"
-        ]);
-    }
-
-
-    if (empty($telephoneDestinataire)) {
-
-        return $this->response->setJSON([
-            'success'=>false,
-            'error'=>"Numéro du destinataire obligatoire"
-        ]);
-    }
-
-
-    if ($montant <= 0) {
-
-        return $this->response->setJSON([
-            'success'=>false,
-            'error'=>"Montant invalide"
-        ]);
-    }
-
+    
+    $montant = (int)$this->request->getPost('montant');
 
 
     $clientModel = new ClientModel();
-    $mvmntModel = new MouvementModel();
     $operationModel = new OperationModel();
+    $mvmntModel = new MouvementModel();
     $typeMouvementModel = new TypeMouvementModel();
     $baremeModel = new BaremeFraisModel();
-
-
-$soldeModel = new SoldeModel();
-
-
-
-    // Recherche du destinataire par téléphone
-
-    $idClientDestinataire = $clientModel
-        ->getIdByTelephone($telephoneDestinataire);
+    $soldeModel = new SoldeModel();
 
 
 
-    if (!$idClientDestinataire) {
-
-        return $this->response->setJSON([
-            'success'=>false,
-            'error'=>"Destinataire introuvable"
-        ]);
-    }
+    // Recherche du destinataire
+    // Peut retourner null si le numéro n'existe pas
+    $idClientDestinataire =
+        $clientModel->getIdByTelephone($telephoneDestinataire);
 
 
 
-    // Empêcher transfert vers soi-même
-
-    if ($idClientSource == $idClientDestinataire) {
-
-        return $this->response->setJSON([
-            'success'=>false,
-            'error'=>"Impossible de transférer vers votre propre numéro"
-        ]);
-    }
-
-
- $bareme = $baremeModel->trouverBareme(2, $montant);
+    // Calcul frais transfert
+    $bareme = $baremeModel->trouverBareme(3, $montant);
 
     $frais = $bareme ? (int)$bareme['frais'] : 0;
 
 
     $montantTotal = $montant + $frais;
-  
-$solde = $soldeModel->calculerSolde($idClientSource);
+
+
+    // Vérification solde
+    $solde =
+        $soldeModel->calculerSolde($idClientSource);
 
 
 
-
-    if ($solde < $montantTotal) {
+    if($solde < $montantTotal){
 
         return $this->response->setJSON([
+
             'success'=>false,
             'error'=>"Solde insuffisant"
+
         ]);
+
     }
 
+   
 
 
 
-    // Types mouvement
-
-    $idDebit = $typeMouvementModel
-        ->getIdByNom('Debit');
+    $idDebit =
+        $typeMouvementModel->getIdByNom('Debit');
 
 
-    $idCredit = $typeMouvementModel
-        ->getIdByNom('Credit');
-
+    $idCredit =
+        $typeMouvementModel->getIdByNom('Credit');
 
 
 
     $this->db->transBegin();
 
 
-    try {
+    try{
 
 
         // Création opération
-        // Transfert = id_type_operation 3
-
         $idOperation = $operationModel->insert([
 
             'id_type_operation'=>3,
 
             'client_source'=>$idClientSource,
 
+            // Peut être NULL si inconnu
             'client_destination'=>$idClientDestinataire,
+
+            // On garde toujours le numéro
+            'telephone_destination'=>$telephoneDestinataire,
 
             'montant'=>$montant,
 
-            'frais'=>0
+            'frais'=>$frais
 
-        ], true);
+
+        ],true);
 
 
 
@@ -387,14 +317,13 @@ $solde = $soldeModel->calculerSolde($idClientSource);
             throw new \Exception(
                 "Erreur création opération"
             );
+
         }
 
 
 
-
-        // Débit du compte source
-
-        $debit = $mvmntModel->insert([
+        // Débit de l'expéditeur
+        $mvmntModel->insert([
 
             'id_operation'=>$idOperation,
 
@@ -409,29 +338,22 @@ $solde = $soldeModel->calculerSolde($idClientSource);
 
 
 
-        // Crédit du destinataire
+        // Crédit seulement si le client existe
+        if($idClientDestinataire){
 
-        $credit = $mvmntModel->insert([
+            $mvmntModel->insert([
 
-            'id_operation'=>$idOperation,
+                'id_operation'=>$idOperation,
 
-            'id_client'=>$idClientDestinataire,
+                'id_client'=>$idClientDestinataire,
 
-            'id_type_mouvement'=>$idCredit,
+                'id_type_mouvement'=>$idCredit,
 
-            'montant'=>$montant
+                'montant'=>$montant
 
-        ]);
+            ]);
 
-
-
-        if(!$debit || !$credit){
-
-            throw new \Exception(
-                "Erreur enregistrement mouvement"
-            );
         }
-
 
 
 
@@ -443,20 +365,20 @@ $solde = $soldeModel->calculerSolde($idClientSource);
 
             'success'=>true,
 
-            'message'=>"Transfert effectué avec succès",
+            'message'=>"Transfert effectué",
 
-            'id_operation'=>$idOperation,
-            'frais'=>$frais
+            'frais'=>$frais,
+
+            'destinataire'=>$telephoneDestinataire
 
         ]);
 
 
 
-    } catch(\Exception $e){
+    }catch(\Exception $e){
 
 
         $this->db->transRollback();
-
 
 
         return $this->response->setJSON([
@@ -468,21 +390,36 @@ $solde = $soldeModel->calculerSolde($idClientSource);
         ]);
 
     }
-
 }
+
+
+
+
     public function getSolde(int $idClient)
     {
-        $mouvementModel = new MouvementModel();
+        $soldeModel = new SoldeModel();
 
-        return $this->response->setJSON(['solde' => $mouvementModel->calculerSolde($idClient)]);
+
+        return $this->response->setJSON([
+
+            'solde'=>$soldeModel->calculerSolde($idClient)
+
+        ]);
     }
+
+
+
 
     public function formOperation()
     {
         $typeOperationModel = new TypeOperationModel();
 
-        return view('client/operation', [
-            'types' => $typeOperationModel->findAll(),
+
+        return view('client/operation',[
+
+            'types'=>$typeOperationModel->findAll()
+
         ]);
     }
+
 }

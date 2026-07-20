@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\ClientModel;
+use App\Models\PrefixeModel;
 
 class AuthController extends BaseController
 {
@@ -17,64 +18,63 @@ public function login()
 
     return view('auth/login');
 }
-
-    public function authentifier()
-    {
-
-        $telephone = trim(
-            $this->request->getPost('telephone')
-        );
+public function authentifier()
+{
+    $telephone = trim(
+        $this->request->getPost('telephone')
+    );
 
 
-        if(empty($telephone)){
-
-            return view('auth/login',[
-                'error'=>"Veuillez entrer un numéro."
-            ]);
-        }
-
-
-        $clientModel = new ClientModel();
+    if(empty($telephone)){
+        return view('auth/login',[
+            'error'=>"Veuillez entrer un numéro."
+        ]);
+    }
 
 
-        // Recherche par téléphone
-        $client = $clientModel
-            ->where('telephone', $telephone)
-            ->first();
+    // Vérification du préfixe
+    $prefixe = substr($telephone, 0, 3);
 
+    if($prefixe != '034' && $prefixe != '038'){
 
-
-        if(!$client){
-
-            return view('auth/login',[
-                'error'=>"Numéro incorrect : ".$telephone
-            ]);
-
-        }
-
-
-
-        // Création de la session client
-
-        session()->set([
-
-            'id_client' => $client['id'],
-
-            'telephone' => $client['telephone'],
-
-            'nom' => $client['nom'],
-
-            'connecte' => true
-
+        return view('auth/login',[
+            'error'=>"Le numéro doit commencer par 034 ou 038."
         ]);
 
+    }
 
 
-        // Redirection vers accueil client
+    $clientModel = new ClientModel();
 
-        return redirect()->to('/client');
+
+    // Recherche par téléphone
+    $client = $clientModel
+        ->where('telephone', $telephone)
+        ->first();
+
+
+    if(!$client){
+
+        return view('auth/login',[
+            'error'=>"Numéro incorrect : ".$telephone
+        ]);
 
     }
+
+
+    // Création session
+    session()->set([
+
+        'id_client' => $client['id'],
+        'telephone' => $client['telephone'],
+        'nom' => $client['nom'],
+        'connecte' => true
+
+    ]);
+
+
+    return redirect()->to('/client');
+}
 
 
 

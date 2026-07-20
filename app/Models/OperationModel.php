@@ -8,14 +8,14 @@ class OperationModel extends Model
 {
     protected $table         = 'operation';
     protected $primaryKey    = 'id';
-    protected $allowedFields = [
-        'id_type_operation',
-        'client_source',
-        'client_destination',
-        'montant',
-        'frais',
-        'date_operation',
-    ];
+protected $allowedFields = [
+    'id_type_operation',
+    'client_source',
+    'client_destination',
+    'telephone_destination',
+    'montant',
+    'frais'
+];
     protected $returnType    = 'array';
     protected $useTimestamps = false;
 
@@ -174,4 +174,37 @@ protected $validationRules = [
 
         return (int) ($result ?? 0);
     }
+
+public function getHistoriqueClient($idClient)
+{
+    return $this
+        ->select('
+            operation.*,
+            type_operation.nom as type_operation,
+            cd.telephone as telephone_client
+        ')
+        ->join(
+            'type_operation',
+            'type_operation.id = operation.id_type_operation'
+        )
+        ->join(
+            'client cd',
+            'cd.id = operation.client_destination',
+            'left'
+        )
+        ->groupStart()
+
+            ->where('operation.client_source',$idClient)
+
+            ->orWhere('operation.client_destination',$idClient)
+
+        ->groupEnd()
+
+        ->orderBy(
+            'operation.date_operation',
+            'DESC'
+        )
+
+        ->findAll();
+}
 }
