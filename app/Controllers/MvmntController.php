@@ -85,4 +85,13 @@ return [
     'id_operation' => $idOperation
 ];
     }
+
+
+    public function getSolde(int $idClient){
+      $mouvementModel = new MouvementModel();
+      $solde = $mouvementModel->calculerSolde($idClient);
+
+     return $solde;
+
+    }
 }
