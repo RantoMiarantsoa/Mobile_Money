@@ -32,6 +32,16 @@ CREATE TABLE bareme_frais (
     FOREIGN KEY (id_type_operation) REFERENCES type_operation(id)
 );
 
+CREATE TABLE commission_operateur (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    operateur_source INTEGER NOT NULL,
+    operateur_destination INTEGER NOT NULL,
+    commission REAL NOT NULL,
+
+    FOREIGN KEY (operateur_source) REFERENCES operateur(id),
+    FOREIGN KEY (operateur_destination) REFERENCES operateur(id)
+);
+
 CREATE TABLE operation (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     id_type_operation INTEGER NOT NULL,
@@ -206,3 +216,21 @@ INSERT INTO commission_autre_operateur
 VALUES
 (1,5),
 (3,3);
+INSERT INTO commission_operateur
+(operateur_source, operateur_destination, commission)
+VALUES
+
+-- MVola
+(2,2,0),
+(2,1,2),
+(2,3,2),
+
+-- Orange
+(1,1,0),
+(1,2,2),
+(1,3,2),
+
+-- Airtel
+(3,3,0),
+(3,1,2),
+(3,2,2);

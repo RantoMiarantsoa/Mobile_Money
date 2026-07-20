@@ -1443,148 +1443,25 @@ DEBUG - 2026-07-20 12:34:15 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2026-07-20 12:34:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-07-20 12:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-07-20 12:34:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-07-20 12:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-07-20 12:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-07-20 12:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-07-20 12:42:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-07-20 12:42:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-07-20 12:50:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-07-20 12:50:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-ERROR - 2026-07-20 13:00:43 --> Unable to prepare statement: ambiguous column name: v_solde_client.id_client
-in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
- 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
- 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
- 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
- 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
- 5 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
- 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
- 7 APPPATH/Models/SoldeModel.php(35): CodeIgniter\BaseModel->findAll()
- 8 APPPATH/Controllers/OperateurController.php(132): App\Models\SoldeModel->listeComptesClients()
- 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->comptesClients()
-10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
-11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
-12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
-13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
-14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
-15 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
-CRITICAL - 2026-07-20 13:00:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: ambiguous column name: v_solde_client.id_client
-[Method: GET, Route: operateur/comptes-clients]
-in SYSTEMPATH/Database/BaseConnection.php on line 865.
- 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
- 2 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
- 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
- 4 APPPATH/Models/SoldeModel.php(35): CodeIgniter\BaseModel->findAll()
- 5 APPPATH/Controllers/OperateurController.php(132): App\Models\SoldeModel->listeComptesClients()
- 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->comptesClients()
- 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
- 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
- 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
-11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
-12 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
-CRITICAL - 2026-07-20 13:00:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: ambiguous column name: v_solde_client.id_client
-in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
- 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
- 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
- 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
- 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
- 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
- 6 APPPATH/Models/SoldeModel.php(35): CodeIgniter\BaseModel->findAll()
- 7 APPPATH/Controllers/OperateurController.php(132): App\Models\SoldeModel->listeComptesClients()
- 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->comptesClients()
- 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
-10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
-11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
-12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
-13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
-14 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
-CRITICAL - 2026-07-20 13:00:43 --> [Caused by] SQLite3Exception: Unable to prepare statement: ambiguous column name: v_solde_client.id_client
-in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
- 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
- 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
- 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
- 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
- 5 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
- 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
- 7 APPPATH/Models/SoldeModel.php(35): CodeIgniter\BaseModel->findAll()
- 8 APPPATH/Controllers/OperateurController.php(132): App\Models\SoldeModel->listeComptesClients()
- 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->comptesClients()
-10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
-11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
-12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
-13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
-14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
-15 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
-ERROR - 2026-07-20 13:00:48 --> Unable to prepare statement: ambiguous column name: v_solde_client.id_client
-in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
- 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
- 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
- 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
- 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
- 5 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
- 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
- 7 APPPATH/Models/SoldeModel.php(35): CodeIgniter\BaseModel->findAll()
- 8 APPPATH/Controllers/OperateurController.php(132): App\Models\SoldeModel->listeComptesClients()
- 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->comptesClients()
-10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
-11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
-12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
-13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
-14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
-15 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
-CRITICAL - 2026-07-20 13:00:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: ambiguous column name: v_solde_client.id_client
-[Method: GET, Route: operateur/comptes-clients]
-in SYSTEMPATH/Database/BaseConnection.php on line 865.
- 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
- 2 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
- 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
- 4 APPPATH/Models/SoldeModel.php(35): CodeIgniter\BaseModel->findAll()
- 5 APPPATH/Controllers/OperateurController.php(132): App\Models\SoldeModel->listeComptesClients()
- 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->comptesClients()
- 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
- 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
- 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
-11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
-12 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
-CRITICAL - 2026-07-20 13:00:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: ambiguous column name: v_solde_client.id_client
-in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
- 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
- 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
- 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
- 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
- 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
- 6 APPPATH/Models/SoldeModel.php(35): CodeIgniter\BaseModel->findAll()
- 7 APPPATH/Controllers/OperateurController.php(132): App\Models\SoldeModel->listeComptesClients()
- 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->comptesClients()
- 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
-10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
-11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
-12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
-13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
-14 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
-CRITICAL - 2026-07-20 13:00:48 --> [Caused by] SQLite3Exception: Unable to prepare statement: ambiguous column name: v_solde_client.id_client
-in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
- 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
- 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
- 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
- 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
- 5 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
- 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
- 7 APPPATH/Models/SoldeModel.php(35): CodeIgniter\BaseModel->findAll()
- 8 APPPATH/Controllers/OperateurController.php(132): App\Models\SoldeModel->listeComptesClients()
- 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->comptesClients()
-10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
-11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
-12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
-13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
-14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
-15 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
-DEBUG - 2026-07-20 13:19:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-07-20 13:19:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-07-20 13:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-07-20 13:19:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-07-20 13:20:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-07-20 13:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-07-20 13:20:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-07-20 13:20:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:52:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:52:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:13:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
