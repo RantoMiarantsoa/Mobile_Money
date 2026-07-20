@@ -57,7 +57,7 @@ class OperationModel extends Model
      */
     public function coherenceClients(string $idTypeOperation, string $fields, array $data, ?string &$error = null): bool
     {
-        $type = new TypeOperationModel()->find((int) $idTypeOperation);
+        $type = model(TypeOperationModel::class)->find((int) $idTypeOperation);
 
         if (! $type) {
             return true; // déjà couvert par is_not_unique
@@ -101,33 +101,48 @@ class OperationModel extends Model
      */
     public function calculerFrais(int $idTypeOperation, int $montant): int
     {
-        $bareme = new BaremeFraisModel()->trouverBareme($idTypeOperation, $montant);
+        $bareme = model(BaremeFraisModel::class)->trouverBareme($idTypeOperation, $montant);
 
         return $bareme ? (int) $bareme['frais'] : 0;
     }
 
+    /**
+     * Somme des frais perçus pour un type d'opération donné (par nom : 'Retrait', 'Transfert'...).
+     */
+    protected function gainParType(string $nomTypeOperation): int
+    {
+        $result = \Config\Database::connect()
+            ->table('operation o')
+            ->selectSum('o.frais')
+            ->join('type_operation t', 't.id = o.id_type_operation')
+            ->where('t.nom', $nomTypeOperation)
+            ->get()
+            ->getRow('frais');
+
+        return (int) ($result ?? 0);
+    }
 
     public function gainTotalRetrait(): int
     {
-        $result = $this->where('id_type_operation', 2)
-                       ->selectSum('frais')
-                       ->first();
-
-        return (int) ($result['frais'] ?? 0);
+        return $this->gainParType('Retrait');
     }
 
-     public function gainTotalTransfert(): int
+    public function gainTotalTransfert(): int
     {
-        $result = $this->where('id_type_operation', 3)
-                       ->selectSum('frais')
-                       ->first();
-
-        return (int) ($result['frais'] ?? 0);
+        return $this->gainParType('Transfert');
     }
 
-     public function gainTotal(): int
+    /**
+     * Somme de tous les frais perçus, tous types d'opérations confondus.
+     */
+    public function gainTotal(): int
     {
-        return $this->gainTotalRetrait() + $this->gainTotalTransfert();
-    }
+        $result = \Config\Database::connect()
+            ->table('operation')
+            ->selectSum('frais')
+            ->get()
+            ->getRow('frais');
 
+        return (int) ($result ?? 0);
+    }
 }
