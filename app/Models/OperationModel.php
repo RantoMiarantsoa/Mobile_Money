@@ -105,4 +105,29 @@ class OperationModel extends Model
 
         return $bareme ? (int) $bareme['frais'] : 0;
     }
+
+
+    public function gainTotalRetrait(): int
+    {
+        $result = $this->where('id_type_operation', 2)
+                       ->selectSum('frais')
+                       ->first();
+
+        return (int) ($result['frais'] ?? 0);
+    }
+
+     public function gainTotalTransfert(): int
+    {
+        $result = $this->where('id_type_operation', 3)
+                       ->selectSum('frais')
+                       ->first();
+
+        return (int) ($result['frais'] ?? 0);
+    }
+
+     public function gainTotal(): int
+    {
+        return $this->gainTotalRetrait() + $this->gainTotalTransfert();
+    }
+
 }
