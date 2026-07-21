@@ -132,13 +132,13 @@ class CURLRequest extends OutgoingRequest
         $this->baseURI        = $uri->useRawQueryString();
         $this->defaultOptions = $options;
 
-        $this->shareOptions = config(ConfigCURLRequest::class)->shareOptions;
+        $this->shareOptions = config(ConfigCURLRequest::class)->shareOptions ?? true;
 
         $this->config = $this->defaultConfig;
         $this->parseOptions($options);
 
         // Share Connection
-        $optShareConnection = config(ConfigCURLRequest::class)->shareConnectionOptions ?? [ // @phpstan-ignore nullCoalesce.property
+        $optShareConnection = config(ConfigCURLRequest::class)->shareConnectionOptions ?? [
             CURL_LOCK_DATA_CONNECT,
             CURL_LOCK_DATA_DNS,
         ];

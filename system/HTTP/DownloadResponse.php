@@ -216,7 +216,7 @@ class DownloadResponse extends Response
      * Sets the Content Type header for this response with the mime type
      * and, optionally, the charset.
      *
-     * @return $this
+     * @return ResponseInterface
      */
     public function setContentType(string $mime, string $charset = 'UTF-8')
     {
@@ -286,7 +286,7 @@ class DownloadResponse extends Response
     /**
      * output download file text.
      *
-     * @return $this
+     * @return DownloadResponse
      *
      * @throws DownloadException
      */
@@ -306,7 +306,7 @@ class DownloadResponse extends Response
     /**
      * output download text by file.
      *
-     * @return $this
+     * @return DownloadResponse
      */
     private function sendBodyByFilePath()
     {
@@ -324,7 +324,7 @@ class DownloadResponse extends Response
     /**
      * output download text by binary
      *
-     * @return $this
+     * @return DownloadResponse
      */
     private function sendBodyByBinary()
     {

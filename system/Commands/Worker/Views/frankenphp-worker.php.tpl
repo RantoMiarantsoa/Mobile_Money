@@ -36,9 +36,7 @@ if (version_compare(PHP_VERSION, $minPhpVersion, '<')) {
  *---------------------------------------------------------------
  */
 
-if (! defined('FCPATH')) {
-    define('FCPATH', __DIR__ . DIRECTORY_SEPARATOR);
-}
+define('FCPATH', __DIR__ . DIRECTORY_SEPARATOR);
 
 if (getcwd() . DIRECTORY_SEPARATOR !== FCPATH) {
     chdir(FCPATH);
@@ -51,11 +49,11 @@ if (getcwd() . DIRECTORY_SEPARATOR !== FCPATH) {
  */
 
 // This is the line that might need to be changed, depending on your folder structure.
-require_once FCPATH . '../app/Config/Paths.php';
+require FCPATH . '../app/Config/Paths.php';
 // ^^^ Change this line if you move your application folder
 $paths = new Paths();
 
-require_once $paths->systemDirectory . '/Boot.php';
+require $paths->systemDirectory . '/Boot.php';
 
 // One-time boot - loads autoloader, environment, helpers, etc.
 $app = Boot::bootWorker($paths);

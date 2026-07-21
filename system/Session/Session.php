@@ -72,8 +72,8 @@ class Session implements SessionInterface
             'domain'   => $cookie->domain,
             'secure'   => $cookie->secure,
             'httponly' => true, // for security
-            'samesite' => $cookie->samesite,
-            'raw'      => $cookie->raw,
+            'samesite' => $cookie->samesite ?? Cookie::SAMESITE_LAX,
+            'raw'      => $cookie->raw ?? false,
         ]))->withPrefix(''); // Cookie prefix should be ignored.
 
         helper('array');

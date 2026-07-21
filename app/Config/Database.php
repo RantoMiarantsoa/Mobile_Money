@@ -57,7 +57,7 @@ class Database extends Config
         * @var array<string, mixed>
         */
       public array $default = [
-    'database'    => APPPATH . 'Database/caisse.db',  // ← Chemin correct
+    'database'    => WRITEPATH . 'mobile_money.db',  // ← Chemin correct
     'DBDriver'    => 'SQLite3',
     'DBPrefix'    => '',
     'DBDebug'     => true,

@@ -65,7 +65,9 @@ class PredisHandler extends BaseHandler
     {
         $this->prefix = $config->prefix;
 
-        $this->config = array_merge($this->config, $config->redis);
+        if (isset($config->redis)) {
+            $this->config = array_merge($this->config, $config->redis);
+        }
     }
 
     public function initialize(): void
@@ -92,9 +94,10 @@ class PredisHandler extends BaseHandler
         }
 
         return match ($data['__ci_type']) {
-            'array', 'object'                                => unserialize($data['__ci_value']),
+            'array', 'object' => unserialize($data['__ci_value']),
+            // Yes, 'double' is returned and NOT 'float'
             'boolean', 'integer', 'double', 'string', 'NULL' => settype($data['__ci_value'], $data['__ci_type']) ? $data['__ci_value'] : null,
-            default                                          => null,
+            default => null,
         };
     }
 
@@ -110,7 +113,7 @@ class PredisHandler extends BaseHandler
 
             case 'boolean':
             case 'integer':
-            case 'double':
+            case 'double': // Yes, 'double' is returned and NOT 'float'
             case 'string':
             case 'NULL':
                 break;

@@ -1,0 +1,1696 @@
+ERROR - 2026-07-20 08:56:34 --> Unable to prepare statement: no such table: type_operation
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/MvmntController.php(148): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->formOperation()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:56:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: type_operation
+[Method: GET, Route: client/operation/form]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Controllers/MvmntController.php(148): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->formOperation()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:56:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: type_operation
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/MvmntController.php(148): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->formOperation()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:56:34 --> [Caused by] SQLite3Exception: Unable to prepare statement: no such table: type_operation
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/MvmntController.php(148): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->formOperation()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+ERROR - 2026-07-20 08:57:10 --> Unable to prepare statement: no such table: type_operation
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/MvmntController.php(148): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->formOperation()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:57:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: type_operation
+[Method: GET, Route: client/operation/form]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Controllers/MvmntController.php(148): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->formOperation()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:57:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: type_operation
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/MvmntController.php(148): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->formOperation()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:57:10 --> [Caused by] SQLite3Exception: Unable to prepare statement: no such table: type_operation
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/MvmntController.php(148): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->formOperation()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+ERROR - 2026-07-20 08:57:29 --> Unable to prepare statement: no such table: type_operation
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/MvmntController.php(148): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->formOperation()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:57:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: type_operation
+[Method: GET, Route: client/operation/form]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Controllers/MvmntController.php(148): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->formOperation()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:57:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: type_operation
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/MvmntController.php(148): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->formOperation()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:57:29 --> [Caused by] SQLite3Exception: Unable to prepare statement: no such table: type_operation
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/MvmntController.php(148): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->formOperation()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+ERROR - 2026-07-20 08:58:40 --> Unable to prepare statement: no such table: type_operation
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/MvmntController.php(148): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->formOperation()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:58:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: type_operation
+[Method: GET, Route: client/operation/form]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Controllers/MvmntController.php(148): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->formOperation()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:58:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: type_operation
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/MvmntController.php(148): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->formOperation()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:58:40 --> [Caused by] SQLite3Exception: Unable to prepare statement: no such table: type_operation
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/MvmntController.php(148): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->formOperation()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+ERROR - 2026-07-20 09:01:53 --> Unable to prepare statement: no such table: type_operation
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/MvmntController.php(148): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->formOperation()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:01:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: type_operation
+[Method: GET, Route: client/operation/form]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Controllers/MvmntController.php(148): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->formOperation()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:01:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: type_operation
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/MvmntController.php(148): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->formOperation()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:01:53 --> [Caused by] SQLite3Exception: Unable to prepare statement: no such table: type_operation
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/MvmntController.php(148): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->formOperation()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+ERROR - 2026-07-20 09:01:54 --> Unable to prepare statement: no such table: type_operation
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/MvmntController.php(148): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->formOperation()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:01:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: type_operation
+[Method: GET, Route: client/operation/form]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Controllers/MvmntController.php(148): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->formOperation()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:01:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: type_operation
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/MvmntController.php(148): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->formOperation()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:01:54 --> [Caused by] SQLite3Exception: Unable to prepare statement: no such table: type_operation
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/MvmntController.php(148): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->formOperation()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:03:30 --> ErrorException: Undefined array key "code"
+[Method: GET, Route: client/operation/form]
+in APPPATH/Views/client/operation.php on line 97.
+ 1 APPPATH/Views/client/operation.php(97): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/ranto/S4/Mr Rojo/Mobile_Money/app/Views/client/operation.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MvmntController.php(150): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->formOperation()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:03:32 --> ErrorException: Undefined array key "code"
+[Method: GET, Route: client/operation/form]
+in APPPATH/Views/client/operation.php on line 97.
+ 1 APPPATH/Views/client/operation.php(97): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/ranto/S4/Mr Rojo/Mobile_Money/app/Views/client/operation.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MvmntController.php(150): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->formOperation()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:04:55 --> TypeError: App\Models\TypeOperationModel::getNomById(): Return value must be of type ?int, string returned
+[Method: POST, Route: client/operation]
+in APPPATH/Models/TypeOperationModel.php on line 32.
+ 1 APPPATH/Controllers/MvmntController.php(53): App\Models\TypeOperationModel->getNomById()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->operation()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:40:39 --> TypeError: App\Models\ClientModel::getIdByTelephone(): Argument #1 ($telephone) must be of type string, null given, called in /home/ranto/S4/Mr Rojo/Mobile_Money/app/Controllers/MvmntController.php on line 38
+[Method: POST, Route: client/operation]
+in APPPATH/Models/ClientModel.php on line 60.
+ 1 APPPATH/Controllers/MvmntController.php(38): App\Models\ClientModel->getIdByTelephone()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->operation()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:40:41 --> TypeError: App\Models\ClientModel::getIdByTelephone(): Argument #1 ($telephone) must be of type string, null given, called in /home/ranto/S4/Mr Rojo/Mobile_Money/app/Controllers/MvmntController.php on line 38
+[Method: POST, Route: client/operation]
+in APPPATH/Models/ClientModel.php on line 60.
+ 1 APPPATH/Controllers/MvmntController.php(38): App\Models\ClientModel->getIdByTelephone()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->operation()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:40:42 --> TypeError: App\Models\ClientModel::getIdByTelephone(): Argument #1 ($telephone) must be of type string, null given, called in /home/ranto/S4/Mr Rojo/Mobile_Money/app/Controllers/MvmntController.php on line 38
+[Method: POST, Route: client/operation]
+in APPPATH/Models/ClientModel.php on line 60.
+ 1 APPPATH/Controllers/MvmntController.php(38): App\Models\ClientModel->getIdByTelephone()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->operation()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:40:42 --> TypeError: App\Models\ClientModel::getIdByTelephone(): Argument #1 ($telephone) must be of type string, null given, called in /home/ranto/S4/Mr Rojo/Mobile_Money/app/Controllers/MvmntController.php on line 38
+[Method: POST, Route: client/operation]
+in APPPATH/Models/ClientModel.php on line 60.
+ 1 APPPATH/Controllers/MvmntController.php(38): App\Models\ClientModel->getIdByTelephone()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->operation()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:41:39 --> TypeError: App\Models\ClientModel::getIdByTelephone(): Argument #1 ($telephone) must be of type string, null given, called in /home/ranto/S4/Mr Rojo/Mobile_Money/app/Controllers/MvmntController.php on line 38
+[Method: POST, Route: client/operation]
+in APPPATH/Models/ClientModel.php on line 60.
+ 1 APPPATH/Controllers/MvmntController.php(38): App\Models\ClientModel->getIdByTelephone()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->operation()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:41:40 --> TypeError: App\Models\ClientModel::getIdByTelephone(): Argument #1 ($telephone) must be of type string, null given, called in /home/ranto/S4/Mr Rojo/Mobile_Money/app/Controllers/MvmntController.php on line 38
+[Method: POST, Route: client/operation]
+in APPPATH/Models/ClientModel.php on line 60.
+ 1 APPPATH/Controllers/MvmntController.php(38): App\Models\ClientModel->getIdByTelephone()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->operation()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:41:40 --> TypeError: App\Models\ClientModel::getIdByTelephone(): Argument #1 ($telephone) must be of type string, null given, called in /home/ranto/S4/Mr Rojo/Mobile_Money/app/Controllers/MvmntController.php on line 38
+[Method: POST, Route: client/operation]
+in APPPATH/Models/ClientModel.php on line 60.
+ 1 APPPATH/Controllers/MvmntController.php(38): App\Models\ClientModel->getIdByTelephone()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->operation()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:41:41 --> TypeError: App\Models\ClientModel::getIdByTelephone(): Argument #1 ($telephone) must be of type string, null given, called in /home/ranto/S4/Mr Rojo/Mobile_Money/app/Controllers/MvmntController.php on line 38
+[Method: POST, Route: client/operation]
+in APPPATH/Models/ClientModel.php on line 60.
+ 1 APPPATH/Controllers/MvmntController.php(38): App\Models\ClientModel->getIdByTelephone()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->operation()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:41:41 --> TypeError: App\Models\ClientModel::getIdByTelephone(): Argument #1 ($telephone) must be of type string, null given, called in /home/ranto/S4/Mr Rojo/Mobile_Money/app/Controllers/MvmntController.php on line 38
+[Method: POST, Route: client/operation]
+in APPPATH/Models/ClientModel.php on line 60.
+ 1 APPPATH/Controllers/MvmntController.php(38): App\Models\ClientModel->getIdByTelephone()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->operation()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:42:42 --> TypeError: App\Models\ClientModel::getIdByTelephone(): Argument #1 ($telephone) must be of type string, null given, called in /home/ranto/S4/Mr Rojo/Mobile_Money/app/Controllers/MvmntController.php on line 41
+[Method: POST, Route: client/operation]
+in APPPATH/Models/ClientModel.php on line 60.
+ 1 APPPATH/Controllers/MvmntController.php(41): App\Models\ClientModel->getIdByTelephone()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->operation()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:42:43 --> TypeError: App\Models\ClientModel::getIdByTelephone(): Argument #1 ($telephone) must be of type string, null given, called in /home/ranto/S4/Mr Rojo/Mobile_Money/app/Controllers/MvmntController.php on line 41
+[Method: POST, Route: client/operation]
+in APPPATH/Models/ClientModel.php on line 60.
+ 1 APPPATH/Controllers/MvmntController.php(41): App\Models\ClientModel->getIdByTelephone()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->operation()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:42:44 --> TypeError: App\Models\ClientModel::getIdByTelephone(): Argument #1 ($telephone) must be of type string, null given, called in /home/ranto/S4/Mr Rojo/Mobile_Money/app/Controllers/MvmntController.php on line 41
+[Method: POST, Route: client/operation]
+in APPPATH/Models/ClientModel.php on line 60.
+ 1 APPPATH/Controllers/MvmntController.php(41): App\Models\ClientModel->getIdByTelephone()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->operation()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:42:44 --> TypeError: App\Models\ClientModel::getIdByTelephone(): Argument #1 ($telephone) must be of type string, null given, called in /home/ranto/S4/Mr Rojo/Mobile_Money/app/Controllers/MvmntController.php on line 41
+[Method: POST, Route: client/operation]
+in APPPATH/Models/ClientModel.php on line 60.
+ 1 APPPATH/Controllers/MvmntController.php(41): App\Models\ClientModel->getIdByTelephone()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\MvmntController->operation()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:54:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "auth/login.php"
+[Method: GET, Route: client/login]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(13): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:54:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "auth/login.php"
+[Method: GET, Route: client/login]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(13): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:54:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "auth/login.php"
+[Method: GET, Route: client/login]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(13): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:54:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "auth/login.php"
+[Method: GET, Route: client/login]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(13): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:54:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "auth/login.php"
+[Method: GET, Route: client/login]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(13): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+DEBUG - 2026-07-20 10:09:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:13:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 10:15:58 --> ErrorException: Undefined variable $solde
+[Method: GET, Route: client]
+in APPPATH/Views/client/accueil.php on line 109.
+ 1 APPPATH/Views/client/accueil.php(109): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/ranto/S4/Mr Rojo/Mobile_Money/app/Views/client/accueil.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ClientController.php(15): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->accueil()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+DEBUG - 2026-07-20 10:16:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 10:16:00 --> ErrorException: Undefined variable $solde
+[Method: GET, Route: client]
+in APPPATH/Views/client/accueil.php on line 109.
+ 1 APPPATH/Views/client/accueil.php(109): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/ranto/S4/Mr Rojo/Mobile_Money/app/Views/client/accueil.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ClientController.php(15): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->accueil()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+DEBUG - 2026-07-20 10:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 10:16:20 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "client/depot.php"
+[Method: GET, Route: client/depot]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/ClientController.php(25): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->depot()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+DEBUG - 2026-07-20 10:21:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:22:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:22:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:23:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:23:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:23:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:23:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:25:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:26:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:26:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:36:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:38:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:38:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:39:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:42:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:42:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+
+CRITICAL - 2026-07-20 08:16:12 --> Error: Class "App\Controllers\BaseController" not found
+[Method: GET, Route: /]
+in APPPATH/Controllers/OperateurController.php on line 11.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(315): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 5 SYSTEMPATH/Router/Router.php(792): class_exists()
+ 6 SYSTEMPATH/Router/Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 7 SYSTEMPATH/CodeIgniter.php(829): CodeIgniter\Router\Router->handle()
+ 8 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:16:13 --> Error: Class "App\Controllers\BaseController" not found
+[Method: GET, Route: /]
+in APPPATH/Controllers/OperateurController.php on line 11.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(315): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 5 SYSTEMPATH/Router/Router.php(792): class_exists()
+ 6 SYSTEMPATH/Router/Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 7 SYSTEMPATH/CodeIgniter.php(829): CodeIgniter\Router\Router->handle()
+ 8 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:18:54 --> Error: Class "App\Controllers\BaseController" not found
+[Method: GET, Route: /]
+in APPPATH/Controllers/OperateurController.php on line 11.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(315): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 5 SYSTEMPATH/Router/Router.php(792): class_exists()
+ 6 SYSTEMPATH/Router/Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 7 SYSTEMPATH/CodeIgniter.php(829): CodeIgniter\Router\Router->handle()
+ 8 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:18:58 --> Error: Class "App\Controllers\BaseController" not found
+[Method: GET, Route: /]
+in APPPATH/Controllers/OperateurController.php on line 11.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(315): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 5 SYSTEMPATH/Router/Router.php(792): class_exists()
+ 6 SYSTEMPATH/Router/Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 7 SYSTEMPATH/CodeIgniter.php(829): CodeIgniter\Router\Router->handle()
+ 8 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:19:02 --> Error: Class "App\Controllers\BaseController" not found
+[Method: GET, Route: /]
+in APPPATH/Controllers/OperateurController.php on line 11.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(315): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 5 SYSTEMPATH/Router/Router.php(792): class_exists()
+ 6 SYSTEMPATH/Router/Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 7 SYSTEMPATH/CodeIgniter.php(829): CodeIgniter\Router\Router->handle()
+ 8 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+ERROR - 2026-07-20 08:30:18 --> Unable to prepare statement: no such table: client
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(759): CodeIgniter\Database\BaseBuilder->countAll()
+ 6 APPPATH/Controllers/OperateurController.php(23): CodeIgniter\Model->__call()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:30:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: client
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(759): CodeIgniter\Database\BaseBuilder->countAll()
+ 3 APPPATH/Controllers/OperateurController.php(23): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:30:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: client
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(759): CodeIgniter\Database\BaseBuilder->countAll()
+ 5 APPPATH/Controllers/OperateurController.php(23): CodeIgniter\Model->__call()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:30:18 --> [Caused by] SQLite3Exception: Unable to prepare statement: no such table: client
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(759): CodeIgniter\Database\BaseBuilder->countAll()
+ 6 APPPATH/Controllers/OperateurController.php(23): CodeIgniter\Model->__call()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+ERROR - 2026-07-20 08:30:22 --> Unable to prepare statement: no such table: client
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(759): CodeIgniter\Database\BaseBuilder->countAll()
+ 6 APPPATH/Controllers/OperateurController.php(23): CodeIgniter\Model->__call()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:30:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: client
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(759): CodeIgniter\Database\BaseBuilder->countAll()
+ 3 APPPATH/Controllers/OperateurController.php(23): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:30:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: client
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(759): CodeIgniter\Database\BaseBuilder->countAll()
+ 5 APPPATH/Controllers/OperateurController.php(23): CodeIgniter\Model->__call()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:30:22 --> [Caused by] SQLite3Exception: Unable to prepare statement: no such table: client
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(759): CodeIgniter\Database\BaseBuilder->countAll()
+ 6 APPPATH/Controllers/OperateurController.php(23): CodeIgniter\Model->__call()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+ERROR - 2026-07-20 08:30:23 --> Unable to prepare statement: no such table: client
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(759): CodeIgniter\Database\BaseBuilder->countAll()
+ 6 APPPATH/Controllers/OperateurController.php(23): CodeIgniter\Model->__call()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:30:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: client
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(759): CodeIgniter\Database\BaseBuilder->countAll()
+ 3 APPPATH/Controllers/OperateurController.php(23): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:30:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: client
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(759): CodeIgniter\Database\BaseBuilder->countAll()
+ 5 APPPATH/Controllers/OperateurController.php(23): CodeIgniter\Model->__call()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:30:23 --> [Caused by] SQLite3Exception: Unable to prepare statement: no such table: client
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(759): CodeIgniter\Database\BaseBuilder->countAll()
+ 6 APPPATH/Controllers/OperateurController.php(23): CodeIgniter\Model->__call()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+ERROR - 2026-07-20 08:42:22 --> Unable to prepare statement: no such table: client
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(759): CodeIgniter\Database\BaseBuilder->countAll()
+ 6 APPPATH/Controllers/OperateurController.php(23): CodeIgniter\Model->__call()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:42:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: client
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(759): CodeIgniter\Database\BaseBuilder->countAll()
+ 3 APPPATH/Controllers/OperateurController.php(23): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:42:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: client
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(759): CodeIgniter\Database\BaseBuilder->countAll()
+ 5 APPPATH/Controllers/OperateurController.php(23): CodeIgniter\Model->__call()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:42:22 --> [Caused by] SQLite3Exception: Unable to prepare statement: no such table: client
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(759): CodeIgniter\Database\BaseBuilder->countAll()
+ 6 APPPATH/Controllers/OperateurController.php(23): CodeIgniter\Model->__call()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+ERROR - 2026-07-20 08:42:23 --> Unable to prepare statement: no such table: client
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(759): CodeIgniter\Database\BaseBuilder->countAll()
+ 6 APPPATH/Controllers/OperateurController.php(23): CodeIgniter\Model->__call()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:42:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: client
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(759): CodeIgniter\Database\BaseBuilder->countAll()
+ 3 APPPATH/Controllers/OperateurController.php(23): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:42:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: client
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(759): CodeIgniter\Database\BaseBuilder->countAll()
+ 5 APPPATH/Controllers/OperateurController.php(23): CodeIgniter\Model->__call()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:42:23 --> [Caused by] SQLite3Exception: Unable to prepare statement: no such table: client
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(759): CodeIgniter\Database\BaseBuilder->countAll()
+ 6 APPPATH/Controllers/OperateurController.php(23): CodeIgniter\Model->__call()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:49:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/sidebar.php"
+[Method: GET, Route: /]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Views/operateur/dashboard.php(24): view()
+ 4 SYSTEMPATH/View/View.php(240): include('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/app/Views/operateur/dashboard.php')
+ 5 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 7 APPPATH/Controllers/OperateurController.php(36): view()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->dashboard()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:54:35 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "operateur/clients.php"
+[Method: GET, Route: operateur/clients]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/OperateurController.php(79): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->clients()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:54:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "operateur/clients.php"
+[Method: GET, Route: operateur/clients]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/OperateurController.php(79): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->clients()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:55:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "operateur/clients.php"
+[Method: GET, Route: operateur/clients]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/OperateurController.php(79): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->clients()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:57:14 --> ErrorException: Undefined array key "solde"
+[Method: GET, Route: operateur/clients]
+in APPPATH/Views/operateur/clients.php on line 55.
+ 1 APPPATH/Views/operateur/clients.php(55): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/app/Views/operateur/clients.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/OperateurController.php(79): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->clients()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:57:15 --> ErrorException: Undefined array key "solde"
+[Method: GET, Route: operateur/clients]
+in APPPATH/Views/operateur/clients.php on line 55.
+ 1 APPPATH/Views/operateur/clients.php(55): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/app/Views/operateur/clients.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/OperateurController.php(79): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->clients()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:57:15 --> ErrorException: Undefined array key "solde"
+[Method: GET, Route: operateur/clients]
+in APPPATH/Views/operateur/clients.php on line 55.
+ 1 APPPATH/Views/operateur/clients.php(55): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/app/Views/operateur/clients.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/OperateurController.php(79): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->clients()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 08:57:23 --> ErrorException: Undefined array key "solde"
+[Method: GET, Route: operateur/clients]
+in APPPATH/Views/operateur/clients.php on line 55.
+ 1 APPPATH/Views/operateur/clients.php(55): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/app/Views/operateur/clients.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/OperateurController.php(79): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->clients()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:33:42 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\BaremeFraisModel::listeBaremes
+[Method: GET, Route: operateur/baremes]
+in SYSTEMPATH/Model.php on line 761.
+ 1 APPPATH/Controllers/OperateurController.php(102): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->baremes()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 09:33:45 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\BaremeFraisModel::listeBaremes
+[Method: GET, Route: operateur/baremes]
+in SYSTEMPATH/Model.php on line 761.
+ 1 APPPATH/Controllers/OperateurController.php(102): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->baremes()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+DEBUG - 2026-07-20 10:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:49:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:49:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:58:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:58:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:59:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:59:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:59:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:00:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:05:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:05:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:05:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:41:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:41:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:41:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:41:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 11:41:39 --> TypeError: Cannot access offset of type Closure on array
+[Method: GET, Route: client/historique]
+in SYSTEMPATH/Database/BaseBuilder.php on line 764.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(738): CodeIgniter\Database\BaseBuilder->whereHaving()
+ 2 SYSTEMPATH/Model.php(759): CodeIgniter\Database\BaseBuilder->orWhere()
+ 3 APPPATH/Models/OperationModel.php(196): CodeIgniter\Model->__call()
+ 4 APPPATH/Controllers/ClientController.php(53): App\Models\OperationModel->getHistoriqueClient()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->historique()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+DEBUG - 2026-07-20 11:43:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:43:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:43:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:43:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:45:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:45:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:45:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 11:46:58 --> ErrorException: Undefined variable $solde
+[Method: GET, Route: client]
+in APPPATH/Views/client/accueil.php on line 100.
+ 1 APPPATH/Views/client/accueil.php(100): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/ranto/S4/Mr Rojo/Mobile_Money/app/Views/client/accueil.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ClientController.php(15): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->accueil()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+DEBUG - 2026-07-20 11:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 11:46:59 --> ErrorException: Undefined variable $solde
+[Method: GET, Route: client]
+in APPPATH/Views/client/accueil.php on line 100.
+ 1 APPPATH/Views/client/accueil.php(100): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/ranto/S4/Mr Rojo/Mobile_Money/app/Views/client/accueil.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ClientController.php(15): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->accueil()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+DEBUG - 2026-07-20 11:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 11:47:00 --> ErrorException: Undefined variable $solde
+[Method: GET, Route: client]
+in APPPATH/Views/client/accueil.php on line 100.
+ 1 APPPATH/Views/client/accueil.php(100): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/ranto/S4/Mr Rojo/Mobile_Money/app/Views/client/accueil.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ClientController.php(15): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->accueil()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+DEBUG - 2026-07-20 11:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 11:47:00 --> ErrorException: Undefined variable $solde
+[Method: GET, Route: client]
+in APPPATH/Views/client/accueil.php on line 100.
+ 1 APPPATH/Views/client/accueil.php(100): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/ranto/S4/Mr Rojo/Mobile_Money/app/Views/client/accueil.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ClientController.php(15): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->accueil()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+DEBUG - 2026-07-20 11:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 11:47:01 --> ErrorException: Undefined variable $solde
+[Method: GET, Route: client]
+in APPPATH/Views/client/accueil.php on line 100.
+ 1 APPPATH/Views/client/accueil.php(100): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/ranto/S4/Mr Rojo/Mobile_Money/app/Views/client/accueil.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ClientController.php(15): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->accueil()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+DEBUG - 2026-07-20 11:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:51:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:51:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:53:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:53:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:53:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:54:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:54:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:10:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:10:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:10:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:12:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:12:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:12:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:12:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:18:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:18:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:18:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:20:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:31:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:31:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:31:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 12:32:47 --> ErrorException: Undefined variable $operations
+[Method: GET, Route: client/historique]
+in APPPATH/Views/client/historique.php on line 32.
+ 1 APPPATH/Views/client/historique.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/ranto/S4/Mr Rojo/Mobile_Money/app/Views/client/historique.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ClientController.php(56): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->historique()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+DEBUG - 2026-07-20 12:32:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 12:32:48 --> ErrorException: Undefined variable $operations
+[Method: GET, Route: client/historique]
+in APPPATH/Views/client/historique.php on line 32.
+ 1 APPPATH/Views/client/historique.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/ranto/S4/Mr Rojo/Mobile_Money/app/Views/client/historique.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ClientController.php(56): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->historique()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+DEBUG - 2026-07-20 12:33:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:34:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:34:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:34:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:34:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:52:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:52:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:13:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 14:02:55 --> Unable to prepare statement: no such table: commission_operateur
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Models/CommissionOperateurModel.php(51): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/OperateurController.php(80): App\Models\CommissionOperateurModel->getGainParOperateur()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->gainAutreOperateur()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 14:02:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: commission_operateur
+[Method: GET, Route: operateur/gain_autre_operateur]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CommissionOperateurModel.php(51): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/OperateurController.php(80): App\Models\CommissionOperateurModel->getGainParOperateur()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->gainAutreOperateur()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 14:02:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: commission_operateur
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Models/CommissionOperateurModel.php(51): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH/Controllers/OperateurController.php(80): App\Models\CommissionOperateurModel->getGainParOperateur()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->gainAutreOperateur()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 14:02:55 --> [Caused by] SQLite3Exception: Unable to prepare statement: no such table: commission_operateur
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Models/CommissionOperateurModel.php(51): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/OperateurController.php(80): App\Models\CommissionOperateurModel->getGainParOperateur()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->gainAutreOperateur()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+ERROR - 2026-07-20 14:03:09 --> Unable to prepare statement: no such column: commission_operateur.montant_commission
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Models/CommissionOperateurModel.php(51): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/OperateurController.php(80): App\Models\CommissionOperateurModel->getGainParOperateur()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->gainAutreOperateur()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 14:03:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such column: commission_operateur.montant_commission
+[Method: GET, Route: operateur/gain_autre_operateur]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CommissionOperateurModel.php(51): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/OperateurController.php(80): App\Models\CommissionOperateurModel->getGainParOperateur()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->gainAutreOperateur()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 14:03:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such column: commission_operateur.montant_commission
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Models/CommissionOperateurModel.php(51): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH/Controllers/OperateurController.php(80): App\Models\CommissionOperateurModel->getGainParOperateur()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->gainAutreOperateur()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 14:03:09 --> [Caused by] SQLite3Exception: Unable to prepare statement: no such column: commission_operateur.montant_commission
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Models/CommissionOperateurModel.php(51): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/OperateurController.php(80): App\Models\CommissionOperateurModel->getGainParOperateur()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->gainAutreOperateur()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 14:04:05 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: operateur/gain_autre_operateur]
+in APPPATH/Views/operateur/gain_autre_operateur.php on line 73.
+ 1 APPPATH/Views/operateur/gain_autre_operateur.php(73): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/ranto/S4/Mr Rojo/Mobile_Money/app/Views/operateur/gain_autre_operateur.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/OperateurController.php(85): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->gainAutreOperateur()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+CRITICAL - 2026-07-20 14:04:06 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: operateur/gain_autre_operateur]
+in APPPATH/Views/operateur/gain_autre_operateur.php on line 73.
+ 1 APPPATH/Views/operateur/gain_autre_operateur.php(73): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/ranto/S4/Mr Rojo/Mobile_Money/app/Views/operateur/gain_autre_operateur.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/OperateurController.php(85): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->gainAutreOperateur()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/ranto/S4/Mr Rojo/Mobile_Money/public/index.php')
+DEBUG - 2026-07-20 14:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 14:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 20:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 20:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 20:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 20:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 20:03:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 20:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 20:03:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 20:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 20:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 20:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 20:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 20:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 20:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 20:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 20:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 20:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 20:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 20:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 20:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 20:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 20:13:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 20:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 20:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 20:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:01:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:01:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:04:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:04:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:08:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:09:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:11:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 21:14:06 --> ErrorException: Undefined variable $nombreTotal
+[Method: GET, Route: client/historique]
+in APPPATH/Views/client/historique.php on line 43.
+ 1 APPPATH/Views/client/historique.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/app/Views/client/historique.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ClientController.php(83): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->historique()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/giovan/S4/SI/exam_final_s4/Mobile_Money/public/index.php')
+DEBUG - 2026-07-20 21:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:14:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:14:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:14:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 21:14:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

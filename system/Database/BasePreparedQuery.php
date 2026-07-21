@@ -192,7 +192,7 @@ abstract class BasePreparedQuery implements PreparedQueryInterface
     /**
      * Returns the result object for the prepared query.
      *
-     * @return false|object|resource|null
+     * @return object|resource|null
      */
     abstract public function _getResult();
 

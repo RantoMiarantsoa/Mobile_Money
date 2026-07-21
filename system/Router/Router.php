@@ -157,7 +157,9 @@ class Router implements RouterInterface
     {
         $config = config(App::class);
 
-        $this->permittedURIChars = $config->permittedURIChars;
+        if (isset($config->permittedURIChars)) {
+            $this->permittedURIChars = $config->permittedURIChars;
+        }
 
         $this->collection = $routes;
 
@@ -170,7 +172,7 @@ class Router implements RouterInterface
         $this->translateURIDashes = $this->collection->shouldTranslateURIDashes();
 
         if ($this->collection->shouldAutoRoute()) {
-            $autoRoutesImproved = config(Feature::class)->autoRoutesImproved;
+            $autoRoutesImproved = config(Feature::class)->autoRoutesImproved ?? false;
             if ($autoRoutesImproved) {
                 assert($this->collection instanceof RouteCollection);
 
@@ -745,7 +747,7 @@ class Router implements RouterInterface
     }
 
     /**
-     * @param (callable(mixed...): (ResponseInterface|string|void))|string $handler
+     * @param callable|string $handler
      */
     protected function setMatchedRoute(string $route, $handler): void
     {

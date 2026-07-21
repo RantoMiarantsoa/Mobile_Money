@@ -795,7 +795,9 @@ abstract class BaseConnection implements ConnectionInterface
             $this->initialize();
         }
 
-        /** @var Query $query */
+        /**
+         * @var Query $query
+         */
         $query = new $queryClass($this);
 
         $query->setQuery($sql, $binds, $setEscapeFlags);
@@ -1684,11 +1686,9 @@ abstract class BaseConnection implements ConnectionInterface
     public function listTables(bool $constrainByPrefix = false)
     {
         if (isset($this->dataCache['table_names']) && $this->dataCache['table_names']) {
-            $tables = $constrainByPrefix
+            return $constrainByPrefix
                 ? preg_grep("/^{$this->DBPrefix}/", $this->dataCache['table_names'])
                 : $this->dataCache['table_names'];
-
-            return array_values($tables);
         }
 
         $sql = $this->_listTables($constrainByPrefix);

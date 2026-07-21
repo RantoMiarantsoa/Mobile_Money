@@ -265,7 +265,9 @@ class Pager implements PagerInterface
     {
         $this->ensureGroup($group);
 
-        /** @var URI $uri */
+        /**
+         * @var URI $uri
+         */
         $uri = $this->groups[$group]['uri'];
 
         $segment = $this->segment[$group] ?? 0;

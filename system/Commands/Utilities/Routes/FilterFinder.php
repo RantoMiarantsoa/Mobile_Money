@@ -56,7 +56,7 @@ final readonly class FilterFinder
             // Add route filters
             $routeFilters = $this->getRouteFilters($uri);
             $this->filters->enableFilters($routeFilters, 'before');
-            $oldFilterOrder = config(Feature::class)->oldFilterOrder ?? false; // @phpstan-ignore nullCoalesce.property
+            $oldFilterOrder = config(Feature::class)->oldFilterOrder ?? false;
             if (! $oldFilterOrder) {
                 $routeFilters = array_reverse($routeFilters);
             }
@@ -91,7 +91,7 @@ final readonly class FilterFinder
             // Add route filters
             $routeFilters = $this->getRouteFilters($uri);
             $this->filters->enableFilters($routeFilters, 'before');
-            $oldFilterOrder = config(Feature::class)->oldFilterOrder ?? false; // @phpstan-ignore nullCoalesce.property
+            $oldFilterOrder = config(Feature::class)->oldFilterOrder ?? false;
             if (! $oldFilterOrder) {
                 $routeFilters = array_reverse($routeFilters);
             }
