@@ -43,4 +43,5 @@ class CommissionAutreOperateurModel extends Model
 
         return $montant * $pourcentage / 100;
     }
+
 }
