@@ -39,6 +39,14 @@ class PrefixeModel extends Model
             ->findAll();
 
     }
+public function getIdOperateurByPrefix(string $prefix)
+{
+    $row = $this
+        ->select('id_operateur')
+        ->where('code', $prefix)
+        ->first();
 
+    return $row ? (int) $row['id_operateur'] : null;
+}
 
 }
