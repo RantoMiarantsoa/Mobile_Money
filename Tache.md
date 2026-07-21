@@ -56,3 +56,9 @@
 ## Historique de transaction
 [x]FOnction getHistorique
 [x]Table pour afficher
+
+
+## Promotion
+
+Ajouter une table promotion
+calculer le frai avec promotion

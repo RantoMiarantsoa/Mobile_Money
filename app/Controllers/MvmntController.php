@@ -13,6 +13,8 @@ use App\Models\CommissionAutreOperateurModel;
 use App\Models\SoldeModel;
 use App\Models\PrefixeModel;
 use App\Models\CommissionOperateurModel;
+use App\Models\PromotionModel;
+
 class MvmntController extends BaseController
 {
     protected $db;
@@ -300,6 +302,7 @@ private function transfertSimple(int $idClientSource, string $telephoneDestinata
     $mvmntModel = new MouvementModel();
     $typeMouvementModel = new TypeMouvementModel();
     $commissionModel = new CommissionOperateurModel();
+    $promotionModel = new PromotionModel();
 
     if (empty($telephoneSource)) return ['success' => false, 'error' => 'Numéro source introuvable'];
 
@@ -319,11 +322,13 @@ private function transfertSimple(int $idClientSource, string $telephoneDestinata
     if ($idClientDestinataire && $idClientSource == $idClientDestinataire) {
         return ['success' => false, 'error' => 'Impossible de transférer vers votre propre numéro'];
     }
+ $promotion =  $promotionModel->getPourcentage();
 
     // Frais de transfert
     $bareme = $baremeModel->trouverBareme(3, $montant);
     $frais = $bareme ? (int) $bareme['frais'] : 0;
 
+    $nouvelleFrais = (int) round($frais * $promotion / 100);
     // Frais de retrait uniquement pour le même opérateur
     $fraisRetrait = 0;
     if ($memeOperateur && $ajouterRetrait) {
@@ -339,8 +344,13 @@ private function transfertSimple(int $idClientSource, string $telephoneDestinata
         $pourcentage = $configModel->trouverCommission($idOperateurDestination);
         $commission = (int) round($montant * $pourcentage / 100);
     }
+if(!$memeOperateur){
 
-    $montantTotal = $montant + $frais + $fraisRetrait + $commission;
+    $montantTotal = $montant +  $frais + $fraisRetrait + $commission;
+}else{
+
+    $montantTotal = $montant + $nouvelleFrais+ $fraisRetrait + $commission;
+}
     $solde = $soldeModel->calculerSolde($idClientSource);
 
     if ($solde < $montantTotal) return ['success' => false, 'error' => 'Solde insuffisant'];
@@ -351,15 +361,28 @@ private function transfertSimple(int $idClientSource, string $telephoneDestinata
     $this->db->transBegin();                                          
 
     try {
-        // Création opération
-        $idOperation = $operationModel->insert([
+
+    if(!$memeOperateur){
+ $idOperation = $operationModel->insert([
             'id_type_operation' => 3,
             'client_source' => $idClientSource,
             'client_destination' => $idClientDestinataire,
             'telephone_destination' => $telephoneDestinataire,
             'montant' => $montant,
-            'frais' => $frais + $fraisRetrait
+            'frais' =>  $frais + $fraisRetrait
         ], true);
+    }else{
+         $idOperation = $operationModel->insert([
+            'id_type_operation' => 3,
+            'client_source' => $idClientSource,
+            'client_destination' => $idClientDestinataire,
+            'telephone_destination' => $telephoneDestinataire,
+            'montant' => $montant,
+            'frais' =>  $nouvelleFrais + $fraisRetrait
+        ], true);
+    }
+        // Création opération
+       
 
         if (!$idOperation) {
             throw new \Exception('Erreur création opération : ' . implode(', ', $operationModel->errors()));
@@ -416,6 +439,8 @@ private function transfertSimple(int $idClientSource, string $telephoneDestinata
             'destinataire' => $telephoneDestinataire,
             'montant' => $montant,
             'frais' => $frais,
+            'promotion' => $promotion,
+            'fraisPromotion' => $nouvelleFrais,
             'fraisRetrait' => $fraisRetrait,
             'pourcentage' => $pourcentage,
             'commission' => $commission,

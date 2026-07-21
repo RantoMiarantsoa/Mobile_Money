@@ -234,3 +234,10 @@ VALUES
 (3,3,0),
 (3,1,2),
 (3,2,2);
+
+
+CREATE TABLE promotion(
+     id INTEGER PRIMARY KEY AUTOINCREMENT,
+    pourcentage REAL NOT NULL DEFAULT 0,
+);
+
